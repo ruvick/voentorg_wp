@@ -2238,7 +2238,26 @@ body.ie .ibg img {
   .products h2 {
     margin-bottom: 15px; }
   .cardinfo {
-    padding: 0 0 20px 0; } }
+    padding: 0 0 20px 0; }
+  .category {
+    padding: 83px 0 20px 0;
+  }
+  .category .breadcrumb {
+    margin-bottom: 10px;
+  }
+  .category h2 {
+    margin-bottom: 25px;
+  }
+  .category .prod-card {
+    margin-bottom: 15px;
+  }
+  .category-description {
+    padding: 15px 0 30px 0;
+  }
+  .category-description__text p:last-child {
+    margin-bottom: 0;
+  }
+}
 
 @media (max-width: 680px) {
   .prod-card__body {
@@ -2449,7 +2468,11 @@ body.ie .ibg img {
     -ms-flex-pack: end;
     justify-content: flex-end; }
   .slide {
-    padding-top: 56px; } }
+    padding-top: 56px; }
+  .category {
+    padding: 63px 0 20px 0;
+  }
+}
 
 @media (max-width: 354px) {
   .footer-menu {
