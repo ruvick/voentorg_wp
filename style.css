@@ -7,13 +7,15 @@ Version: 1.0.1
 */
 
 @charset "UTF-8";
+
 @import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap");
+
 @font-face {
   font-family: "Pobeda";
-  src: url("../fonts/pobeda-bold.eot");
-  src: local("☺"), url("../fonts/pobeda-bold.woff") format("woff"), url("../fonts/pobeda-bold.ttf") format("truetype"), url("../fonts/pobeda-bold.svg") format("svg");
+  src: url("fonts/pobeda-bold.eot");
+  src: local("☺"), url("fonts/pobeda-bold.woff") format("woff"), url("fonts/pobeda-bold.ttf") format("truetype"), url("fonts/pobeda-bold.svg") format("svg");
   font-weight: 700;
-  font-style: normal; } 
+  font-style: normal; }  
 
 * {
   padding: 0px;
@@ -816,7 +818,7 @@ body.ie .ibg img {
       top: 0;
       width: 8px;
       height: 12px;
-      background: url("../img/icons/arrow-back.svg");
+      background: url("img/icons/arrow-back.svg");
       background-repeat: no-repeat; }
   .pagination__numbers {
     margin-right: 20px;
@@ -849,7 +851,7 @@ body.ie .ibg img {
       top: 0;
       width: 8px;
       height: 12px;
-      background: url("../img/icons/arrow-next.svg");
+      background: url("img/icons/arrow-next.svg");
       background-repeat: no-repeat; }
 
 .current {

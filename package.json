@@ -1,7 +1,7 @@
 {
-  "name": "light_market",
+  "name": "voentorg",
   "version": "1.0.1",
-  "description": "Магазин дизайнерского света",
+  "description": "Военторг", 
   "main": "index.php",
   "scripts": {
     "test": "editorconfig-checker", 
@@ -33,7 +33,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ruvick/light_market__wp.git"
+    "url": "git+https://github.com/ruvick/voentorg_wp.git"
   },
   "keywords": [
     "wp",
@@ -42,9 +42,9 @@
   "author": "ruvick",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ruvick/light_market__wp/issues"
+    "url": "https://github.com/ruvick/voentorg_wp/issues"
   },
-  "homepage": "https://github.com/ruvick/light_market__wp#readme",
+  "homepage": "https://github.com/ruvick/voentorg_wp#readme",
   "dependencies": {
     "group-css-media-queries": "^1.4.1"
   }

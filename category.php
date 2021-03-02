@@ -2,563 +2,462 @@
 
 <?php get_template_part('template-parts/header-section');?>
 
-<!-- <main id="primary" class="site-main"> -->
+<main class="page">
 
-	<section id="page" class="page"> 
+	<section class="category"> 
 		<div class="container">
 
 			<div class="breadcrumb">
 				<ul>
-					<li><a href="#">Каталог</a></li>
-					<li>/ Люстры</li>
+					<li><a href="#">Главная</a></li>
+					<li>/ Охота и рыбалка</li>
 				</ul>
 			</div>
 
-			<div class="page__body d-flex">
+			<h2>Охота и рыбалка</h2>
 
-				<aside class="page__side">
-					<nav class="menu-left">
+			<div class="prod-card d-flex"> 
 
-						<div class="menu-cat-left">
-							<button id="cat" class="menu-cat-left__btn icon-menu-left">Каталог</button>
-							<ul id="catmenu" class="catmenu">
-								<li><label><input type="checkbox" name="type[]">Светильники</label></li>
-								<li><label><input type="checkbox" name="type[]">Подвесные</label></li>
-								<li><label><input type="checkbox" name="type[]">Потолочные</label></li>
-								<li><label><input type="checkbox" name="type[]">Настенные</label></li>
-								<li><label><input type="checkbox" name="type[]">Настенно-потолочные</label></li>
-								<li><label><input type="checkbox" name="type[]">Лофт светильники</label></li>
-								<li><label><input type="checkbox" name="type[]">Гипсовые светильники</label></li>
-								<li><label><input type="checkbox" name="type[]">Накладные светильники</label></li>
-								<li><label><input type="checkbox" name="type[]">Встраиваемые</label></li>
-								<li><label><input type="checkbox" name="type[]">Точечные светильники</label></li>
-								<li><label><input type="checkbox" name="type[]">Мебельные</label></li>
-								<li><label><input type="checkbox" name="type[]">Для растений</label></li>
-							</ul>
+				<div class="prod-card__body d-flex">
+
+					<a href="#" class="prod-card__link">
+						<img src="<?php echo get_template_directory_uri();?>/img/product/pr-01.jpg" alt="">
+					</a>
+
+					<a class="prod-card__text d-flex">
+						<h4>
+							Куртка ТЕГЕРЕК <br>
+							камни олива
+						</h4>
+						<div class="prod-card__price d-flex">
+							<p class="prod-card__price-old">99 000 руб.</p>
+							<p class="prod-card__price-new">79 000 руб.</p>
 						</div>
+						<p class="prod-card__benefit">ВЫГОДА: <span>20 000 РУБ.</span></p>
+					</a>
 
-						<div class="menu-choice">
-							<button id="cat" class="menu-choice__btn icon-menu-left">Цена, P</button>
-
-							<form class="block__form form-block form-choice" action="#">
-								<div class="form-block__item">
-									<div class="category-params-item-price">
-										<div class="category-params-item-price-table table">
-											<div class="cell">
-												<input type="text" name="form[]"id="rangefrom">
-											</div>
-											<div class="cell">
-												<input type="text" name="form[]"id="rangeto">
-											</div>
-										</div>
-										<div id="range" class="category-params-item-price-range"></div>
-									</div>
-								</div>
-							</form> 
-
-						</div>
-
-						<div class="menu-choice">
-							<button class="menu-choice__btn icon-menu-left">Место применения</button>
-
-						</div>
-
-						<div class="menu-choice">
-							<button class="menu-choice__btn icon-menu-left">Форма светильника</button>
-
-						</div>
-
-						<div class="menu-choice">
-							<button id="cat" class="menu-choice__btn icon-menu-left">Форма светильника</button>
-
-						</div>
-
-						<div class="menu-choice">
-							<button id="cat" class="menu-choice__btn icon-menu-left">Размеры</button>
-
-						</div>
-
-
-						<div class="menu-choice">
-							<button id="cat" class="menu-choice__btn icon-menu-left">Стиль</button>
-
-						</div>
-
-						<div class="menu-choice">
-							<button id="cat" class="menu-choice__btn icon-menu-left">Размеры</button>
-
-						</div>
-
-						<div class="menu-choice">
-							<button id="cat" class="menu-choice__btn icon-menu-left">Тип лампочки</button>
-
-						</div>
-
-						<div class="menu-choice">
-							<button id="cat" class="menu-choice__btn icon-menu-left">Страна</button>
-
-						</div>
-
-						<div class="menu-choice">
-							<button id="cat" class="menu-choice__btn icon-menu-left">Степень защиты</button>
-
-						</div>
-
-					</nav>
-
-					<div class="sidebar-sl">
-						<h3>Лучшие бренды</h3>
-						<div class="sidebar-slider">
-							<div class="sidebar-slider__item">
-								<img src="<?php echo get_template_directory_uri();?>/img/sidebar-slider/sbar-sl-01.jpg" alt="">
-							</div>
-
-							<div class="sidebar-slider__item">
-								<img src="<?php echo get_template_directory_uri();?>/img/sidebar-slider/sbar-sl-02.jpg" alt="">
-							</div>
-
-							<div class="sidebar-slider__item">
-								<img src="<?php echo get_template_directory_uri();?>/img/sidebar-slider/sbar-sl-03.jpg" alt="">
-							</div>
-
-							<div class="sidebar-slider__item">
-								<img src="<?php echo get_template_directory_uri();?>/img/sidebar-slider/sbar-sl-04.jpg" alt="">
-							</div>
-
-							<div class="sidebar-slider__item">
-								<img src="<?php echo get_template_directory_uri();?>/img/sidebar-slider/sbar-sl-05.jpg" alt="">
-							</div>
-
-							<div class="sidebar-slider__item">
-								<img src="<?php echo get_template_directory_uri();?>/img/sidebar-slider/sbar-sl-06.jpg" alt="">
-							</div>
-						</div>
-
+					<div class="prod-card__button d-flex">
+						<a href="#" class="prod-card__baskcet d-flex">В корзину</a>
+						<a href="#" class="prod-card__order d-flex">Заказать</a>
 					</div>
+				</div>
 
-				</aside>
 
-				<main class="page__main main">
-					<h1>Люстры</h1>
+				<div class="prod-card__body d-flex">
 
-					<div class="main-block__choice d-flex">
+					<a href="#" class="prod-card__link">
+						<img src="<?php echo get_template_directory_uri();?>/img/product/pr-02.jpg" alt="">
+					</a>
 
-						<div class="main-block__select d-flex">
-							<p>Сортировать по</p>
-
-							<select name="form[]" id="" class="select-block">
-								<option value="1">Популярные</option>
-								<option value="2" option="">Популярные 2</option>
-								<option value="3" option="">Популярные 3</option>
-								<option value="3" option="">Популярные 4</option>
-							</select>
-
+					<a class="prod-card__text d-flex">
+						<h4>
+							Рюкзак AVI-OUTDOOR
+						</h4>
+						<div class="prod-card__price d-flex">
+							<p class="prod-card__price-old">5 000 руб.</p>
+							<p class="prod-card__price-new">3 000 руб.</p>
 						</div>
+						<p class="prod-card__benefit">ВЫГОДА: <span>2 000 РУБ.</span></p>
+					</a>
 
-						<p>Товары 1-40 из 20975</p>
+					<div class="prod-card__button d-flex">
+						<a href="#" class="prod-card__baskcet d-flex">В корзину</a>
+						<a href="#" class="prod-card__order d-flex">Заказать</a>
 					</div>
+				</div>
 
-					<div class="main-prod-card prod-card d-flex">
 
-						<div class="prod-card__body d-flex">
-							<span class="prod-card__sale new-sale">NEW</span>
-							<a href="#" class="prod-card__link">
-								<img src="<?php echo get_template_directory_uri();?>/img/product/pr-07.jpg" alt="">
-							</a>
+				<div class="prod-card__body d-flex">
 
-							<div class="prod-card__text">
-								<a href="#">
-									<h4>Подвесной светильник 
-										Lightstar Escica 806010
-									</h4>
-								</a>
-								<p class="prod-card__manuf">Lightstar (ИТАЛИЯ)</p>
-								<p class="prod-card__avail">В наличии</p>
-							</div>
-							<div class="prod-card__price-item d-flex">
-								<p class="prod-card__price rub">6 463 </p>
-								<a href="#" class="btn">В корзину</a>
-							</div>
+					<a href="#" class="prod-card__link">
+						<img src="<?php echo get_template_directory_uri();?>/img/product/pr-03.jpg" alt="">
+					</a>
+
+					<a class="prod-card__text d-flex">
+						<h4>
+							Брелок карабин <br>
+							с компасом
+						</h4>
+						<div class="prod-card__price d-flex">
+							<p class="prod-card__price-old">99 000 руб.</p>
+							<p class="prod-card__price-new">79 000 руб.</p>
 						</div>
+						<p class="prod-card__benefit">ВЫГОДА: <span>20 000 РУБ.</span></p>
+					</a>
 
-						<div class="prod-card__body d-flex">
-							<span class="prod-card__sale new-sale">NEW</span>
-							<a href="#" class="prod-card__link">
-								<img src="<?php echo get_template_directory_uri();?>/img/product/pr-08.jpg" alt="">
-							</a>
-
-							<div class="prod-card__text">
-								<a href="#">
-									<h4>Подвесной светильник 
-										Lightstar Escica 806010
-									</h4>
-								</a>
-								<p class="prod-card__manuf">Lightstar (ИТАЛИЯ)</p>
-								<p class="prod-card__avail">В наличии</p>
-							</div>
-							<div class="prod-card__price-item d-flex">
-								<p class="prod-card__price rub">6 463 </p>
-								<a href="#" class="btn">В корзину</a>
-							</div>
-						</div>
-
-						<div class="prod-card__body d-flex">
-							<span class="prod-card__sale new-sale">NEW</span>
-							<a href="#" class="prod-card__link">
-								<img src="<?php echo get_template_directory_uri();?>/img/product/pr-09.jpg" alt="">
-							</a>
-
-							<div class="prod-card__text">
-								<a href="#">
-									<h4>Подвесной светильник 
-										Lightstar Escica 806010
-									</h4>
-								</a>
-								<p class="prod-card__manuf">Lightstar (ИТАЛИЯ)</p>
-								<p class="prod-card__avail">В наличии</p>
-							</div>
-							<div class="prod-card__price-item d-flex">
-								<p class="prod-card__price rub">6 463 </p>
-								<a href="#" class="btn">В корзину</a>
-							</div>
-						</div>
-
-						<div class="prod-card__body d-flex">
-							<span class="prod-card__sale new-sale">NEW</span>
-							<a href="#" class="prod-card__link">
-								<img src="<?php echo get_template_directory_uri();?>/img/product/pr-10.jpg" alt="">
-							</a>
-
-							<div class="prod-card__text">
-								<a href="#">
-									<h4>Подвесной светильник 
-										Lightstar Escica 806010
-									</h4>
-								</a>
-								<p class="prod-card__manuf">Lightstar (ИТАЛИЯ)</p>
-								<p class="prod-card__avail">В наличии</p>
-							</div>
-							<div class="prod-card__price-item d-flex">
-								<p class="prod-card__price rub">6 463 </p>
-								<a href="#" class="btn">В корзину</a>
-							</div>
-						</div>
-
+					<div class="prod-card__button d-flex">
+						<a href="#" class="prod-card__baskcet d-flex">В корзину</a>
+						<a href="#" class="prod-card__order d-flex">Заказать</a>
 					</div>
+				</div>
 
-					<div class="main-prod-card prod-card d-flex">
 
-						<div class="prod-card__body d-flex">
-							<span class="prod-card__sale">-40%</span>
-							<a href="#" class="prod-card__link">
-								<img src="<?php echo get_template_directory_uri();?>/img/product/pr-02.jpg" alt="">
-							</a>
+				<div class="prod-card__body d-flex">
 
-							<div class="prod-card__text">
-								<a href="#">
-									<h4>Подвесной светильник 
-										Lightstar Escica 806010
-									</h4>
-								</a>
-								<p class="prod-card__manuf">Lightstar (ИТАЛИЯ)</p>
-								<p class="prod-card__avail">В наличии</p>
-							</div>
-							<div class="prod-card__price-item d-flex">
-								<p class="prod-card__price rub">6 463 </p>
-								<a href="#" class="btn">В корзину</a>
-							</div>
+					<a href="#" class="prod-card__link">
+						<img src="<?php echo get_template_directory_uri();?>/img/product/pr-04.jpg" alt="">
+					</a>
+
+					<a class="prod-card__text d-flex">
+						<h4>
+							Погоны Полиция
+						</h4>
+						<div class="prod-card__price d-flex">
+							<p class="prod-card__price-old">5 000 руб.</p>
+							<p class="prod-card__price-new">3 000 руб.</p>
 						</div>
+						<p class="prod-card__benefit">ВЫГОДА: <span>2 000 РУБ.</span></p>
+					</a>
 
-						<div class="prod-card__body d-flex">
-							<!-- <span class="prod-card__sale">-40%</span> -->
-							<a href="#" class="prod-card__link">
-								<img src="<?php echo get_template_directory_uri();?>/img/product/pr-03.jpg" alt="">
-							</a>
-
-							<div class="prod-card__text">
-								<a href="#">
-									<h4>Подвесной светильник 
-										Lightstar Escica 806010
-									</h4>
-								</a>
-								<p class="prod-card__manuf">Lightstar (ИТАЛИЯ)</p>
-								<p class="prod-card__avail">В наличии</p>
-							</div>
-							<div class="prod-card__price-item d-flex">
-								<p class="prod-card__price rub">6 463 </p>
-								<a href="#" class="btn">В корзину</a>
-							</div>
-						</div>
-
-						<div class="prod-card__body d-flex">
-							<span class="prod-card__sale">-20%</span>
-							<a href="#" class="prod-card__link">
-								<img src="<?php echo get_template_directory_uri();?>img/product/pr-04.jpg" alt="">
-							</a>
-
-							<div class="prod-card__text">
-								<a href="#">
-									<h4>Подвесной светильник 
-										Lightstar Escica 806010
-									</h4>
-								</a>
-								<p class="prod-card__manuf">Lightstar (ИТАЛИЯ)</p>
-								<p class="prod-card__avail">В наличии</p>
-							</div>
-							<div class="prod-card__price-item d-flex">
-								<p class="prod-card__price rub">6 463 </p>
-								<a href="#" class="btn">В корзину</a>
-							</div>
-						</div>
-
-						<div class="prod-card__body d-flex">
-							<!-- <span class="prod-card__sale">-40%</span> -->
-							<a href="#" class="prod-card__link">
-								<img src="<?php echo get_template_directory_uri();?>/img/product/pr-05.jpg" alt="">
-							</a>
-
-							<div class="prod-card__text">
-								<a href="#">
-									<h4>Подвесной светильник 
-										Lightstar Escica 806010
-									</h4>
-								</a>
-								<p class="prod-card__manuf">Lightstar (ИТАЛИЯ)</p>
-								<p class="prod-card__avail">В наличии</p>
-							</div>
-							<div class="prod-card__price-item d-flex">
-								<p class="prod-card__price rub">6 463 </p>
-								<a href="#" class="btn">В корзину</a>
-							</div>
-						</div>
-
+					<div class="prod-card__button d-flex">
+						<a href="#" class="prod-card__baskcet d-flex">В корзину</a>
+						<a href="#" class="prod-card__order d-flex">Заказать</a>
 					</div>
+				</div>
 
-					<div class="modern-baner">
-						<img src="<?php echo get_template_directory_uri();?>/img/modern-baner.jpg" alt="">
-						<div class="modern-baner__text">
-							<h3>Современные
-								cветильники
-							</h3>
-							<h3>
-								FAVOURITE
-							</h3>
+				<div class="prod-card__body d-flex">
+
+					<a href="#" class="prod-card__link">
+						<img src="<?php echo get_template_directory_uri();?>/img/product/pr-04.jpg" alt="">
+					</a>
+
+					<a class="prod-card__text d-flex">
+						<h4>
+							Погоны Полиция
+						</h4>
+						<div class="prod-card__price d-flex">
+							<p class="prod-card__price-old">5 000 руб.</p>
+							<p class="prod-card__price-new">3 000 руб.</p>
 						</div>
+						<p class="prod-card__benefit">ВЫГОДА: <span>2 000 РУБ.</span></p>
+					</a>
+
+					<div class="prod-card__button d-flex">
+						<a href="#" class="prod-card__baskcet d-flex">В корзину</a>
+						<a href="#" class="prod-card__order d-flex">Заказать</a>
 					</div>
+				</div>
 
-					<div class="main-prod-card prod-card d-flex">
+				<div class="prod-card__body d-flex">
 
-						<div class="prod-card__body d-flex">
-							<span class="prod-card__sale">-40%</span>
-							<a href="#" class="prod-card__link">
-								<img src="<?php echo get_template_directory_uri();?>/img/product/pr-11.jpg" alt="">
-							</a>
+					<a href="#" class="prod-card__link">
+						<img src="<?php echo get_template_directory_uri();?>/img/product/pr-03.jpg" alt="">
+					</a>
 
-							<div class="prod-card__text">
-								<a href="#">
-									<h4>Подвесной светильник 
-										Lightstar Escica 806010
-									</h4>
-								</a>
-								<p class="prod-card__manuf">Lightstar (ИТАЛИЯ)</p>
-								<p class="prod-card__avail">В наличии</p>
-							</div>
-							<div class="prod-card__price-item d-flex">
-								<p class="prod-card__price rub">6 463 </p>
-								<a href="#" class="btn">В корзину</a>
-							</div>
+					<a class="prod-card__text d-flex">
+						<h4>
+							Брелок карабин <br>
+							с компасом
+						</h4>
+						<div class="prod-card__price d-flex">
+							<p class="prod-card__price-old">99 000 руб.</p>
+							<p class="prod-card__price-new">79 000 руб.</p>
 						</div>
+						<p class="prod-card__benefit">ВЫГОДА: <span>20 000 РУБ.</span></p>
+					</a>
 
-						<div class="prod-card__body d-flex">
-							<span class="prod-card__sale">-50%</span>
-							<a href="#" class="prod-card__link">
-								<img src="<?php echo get_template_directory_uri();?>/img/product/pr-12.jpg" alt="">
-							</a>
-
-							<div class="prod-card__text">
-								<a href="#">
-									<h4>Подвесной светильник 
-										Lightstar Escica 806010
-									</h4>
-								</a>
-								<p class="prod-card__manuf">Lightstar (ИТАЛИЯ)</p>
-								<p class="prod-card__avail">В наличии</p>
-							</div>
-							<div class="prod-card__price-item d-flex">
-								<p class="prod-card__price rub">6 463 </p>
-								<a href="#" class="btn">В корзину</a>
-							</div>
-						</div>
-
-						<div class="prod-card__body d-flex">
-							<span class="prod-card__sale">-20%</span>
-							<a href="#" class="prod-card__link">
-								<img src="<?php echo get_template_directory_uri();?>/img/product/pr-13.jpg" alt="">
-							</a>
-
-							<div class="prod-card__text">
-								<a href="#">
-									<h4>Подвесной светильник 
-										Lightstar Escica 806010
-									</h4>
-								</a>
-								<p class="prod-card__manuf">Lightstar (ИТАЛИЯ)</p>
-								<p class="prod-card__avail">В наличии</p>
-							</div>
-							<div class="prod-card__price-item d-flex">
-								<p class="prod-card__price rub">6 463 </p>
-								<a href="#" class="btn">В корзину</a>
-							</div>
-						</div>
-
-						<div class="prod-card__body d-flex">
-							<!-- <span class="prod-card__sale">-40%</span> -->
-							<a href="#" class="prod-card__link">
-								<img src="<?php echo get_template_directory_uri();?>/img/product/pr-14.jpg" alt="">
-							</a>
-
-							<div class="prod-card__text">
-								<a href="#">
-									<h4>Подвесной светильник 
-										Lightstar Escica 806010
-									</h4>
-								</a>
-								<p class="prod-card__manuf">Lightstar (ИТАЛИЯ)</p>
-								<p class="prod-card__avail">В наличии</p>
-							</div>
-							<div class="prod-card__price-item d-flex">
-								<p class="prod-card__price rub">6 463 </p>
-								<a href="#" class="btn">В корзину</a>
-							</div>
-						</div>
-
+					<div class="prod-card__button d-flex">
+						<a href="#" class="prod-card__baskcet d-flex">В корзину</a>
+						<a href="#" class="prod-card__order d-flex">Заказать</a>
 					</div>
+				</div>
 
-					<div class="main-prod-card prod-card d-flex">
+				<div class="prod-card__body d-flex">
 
-						<div class="prod-card__body d-flex">
-							<span class="prod-card__sale">-40%</span>
-							<a href="#" class="prod-card__link">
-								<img src="<?php echo get_template_directory_uri();?>/img/product/pr-06.jpg" alt="">
-							</a>
+					<a href="#" class="prod-card__link">
+						<img src="<?php echo get_template_directory_uri();?>/img/product/pr-02.jpg" alt="">
+					</a>
 
-							<div class="prod-card__text">
-								<a href="#">
-									<h4>Подвесной светильник 
-										Lightstar Escica 806010
-									</h4>
-								</a>
-								<p class="prod-card__manuf">Lightstar (ИТАЛИЯ)</p>
-								<p class="prod-card__avail">В наличии</p>
-							</div>
-							<div class="prod-card__price-item d-flex">
-								<p class="prod-card__price rub">6 463 </p>
-								<a href="#" class="btn">В корзину</a>
-							</div>
+					<a class="prod-card__text d-flex">
+						<h4>
+							Рюкзак AVI-OUTDOOR
+						</h4>
+						<div class="prod-card__price d-flex">
+							<p class="prod-card__price-old">5 000 руб.</p>
+							<p class="prod-card__price-new">3 000 руб.</p>
 						</div>
+						<p class="prod-card__benefit">ВЫГОДА: <span>2 000 РУБ.</span></p>
+					</a>
 
-						<div class="prod-card__body d-flex">
-							<span class="prod-card__sale">-50%</span>
-							<a href="#" class="prod-card__link">
-								<img src="<?php echo get_template_directory_uri();?>/img/product/pr-15.jpg" alt="">
-							</a>
-
-							<div class="prod-card__text">
-								<a href="#">
-									<h4>Подвесной светильник 
-										Lightstar Escica 806010
-									</h4>
-								</a>
-								<p class="prod-card__manuf">Lightstar (ИТАЛИЯ)</p>
-								<p class="prod-card__avail">В наличии</p>
-							</div>
-							<div class="prod-card__price-item d-flex">
-								<p class="prod-card__price rub">6 463 </p>
-								<a href="#" class="btn">В корзину</a>
-							</div>
-						</div>
-
-						<div class="prod-card__body d-flex">
-							<span class="prod-card__sale">-20%</span>
-							<a href="#" class="prod-card__link">
-								<img src="<?php echo get_template_directory_uri();?>/img/product/pr-16.jpg" alt="">
-							</a>
-
-							<div class="prod-card__text">
-								<a href="#">
-									<h4>Подвесной светильник 
-										Lightstar Escica 806010
-									</h4>
-								</a>
-								<p class="prod-card__manuf">Lightstar (ИТАЛИЯ)</p>
-								<p class="prod-card__avail">В наличии</p>
-							</div>
-							<div class="prod-card__price-item d-flex">
-								<p class="prod-card__price rub">6 463 </p>
-								<a href="#" class="btn">В корзину</a>
-							</div>
-						</div>
-
-						<div class="prod-card__body d-flex">
-							<!-- <span class="prod-card__sale">-40%</span> -->
-							<a href="#" class="prod-card__link">
-								<img src="<?php echo get_template_directory_uri();?>/img/product/pr-17.jpg" alt="">
-							</a>
-
-							<div class="prod-card__text">
-								<a href="#">
-									<h4>Подвесной светильник 
-										Lightstar Escica 806010
-									</h4>
-								</a>
-								<p class="prod-card__manuf">Lightstar (ИТАЛИЯ)</p>
-								<p class="prod-card__avail">В наличии</p>
-							</div>
-							<div class="prod-card__price-item d-flex">
-								<p class="prod-card__price rub">6 463 </p>
-								<a href="#" class="btn">В корзину</a>
-							</div>
-						</div>
-
+					<div class="prod-card__button d-flex">
+						<a href="#" class="prod-card__baskcet d-flex">В корзину</a>
+						<a href="#" class="prod-card__order d-flex">Заказать</a>
 					</div>
+				</div>
 
-					<div class="show-link">
-						<a href="#" class="show-link__btn">Показать еще</a>
-					</div>
+				<div class="prod-card__body d-flex">
 
-					<nav class="pagination d-flex">
-						<div class="pagination__nav-links d-flex">
-							<a class="pagination__back" href="#">Назад</a>
-							<span class="pagination__numbers">1</span>
-							<a class="pagination__numbers current" href="#">2</a>
-							<a class="pagination__numbers" href="#">3</a>
-							<a class="pagination__numbers" href="#">4</a>
-							<a class="pagination__numbers" href="#">5</a>
-							<div class="pagination__block-dot d-flex">
-								<span class="pagination__dot">.</span>
-								<span class="pagination__dot">.</span>
-								<span class="pagination__dot">.</span>
-							</div>
-							<a class="pagination__numbers" href="#">60</a>
-							<a class="pagination__next" href="#">Вперед</a>
+					<a href="#" class="prod-card__link">
+						<img src="<?php echo get_template_directory_uri();?>/img/product/pr-01.jpg" alt="">
+					</a>
+
+					<a class="prod-card__text d-flex">
+						<h4>
+							Куртка ТЕГЕРЕК <br>
+							камни олива
+						</h4>
+						<div class="prod-card__price d-flex">
+							<p class="prod-card__price-old">99 000 руб.</p>
+							<p class="prod-card__price-new">79 000 руб.</p>
 						</div>
-					</nav>
+						<p class="prod-card__benefit">ВЫГОДА: <span>20 000 РУБ.</span></p>
+					</a>
 
-					<nav class="navigation pagination" role="navigation">
+					<div class="prod-card__button d-flex">
+						<a href="#" class="prod-card__baskcet d-flex">В корзину</a>
+						<a href="#" class="prod-card__order d-flex">Заказать</a>
+					</div>
+				</div>
 
-					</nav>
+				<div class="prod-card__body d-flex">
 
-				</main>
+					<a href="#" class="prod-card__link">
+						<img src="<?php echo get_template_directory_uri();?>/img/product/pr-01.jpg" alt="">
+					</a>
+
+					<a class="prod-card__text d-flex">
+						<h4>
+							Куртка ТЕГЕРЕК <br>
+							камни олива
+						</h4>
+						<div class="prod-card__price d-flex">
+							<p class="prod-card__price-old">99 000 руб.</p>
+							<p class="prod-card__price-new">79 000 руб.</p>
+						</div>
+						<p class="prod-card__benefit">ВЫГОДА: <span>20 000 РУБ.</span></p>
+					</a>
+
+					<div class="prod-card__button d-flex">
+						<a href="#" class="prod-card__baskcet d-flex">В корзину</a>
+						<a href="#" class="prod-card__order d-flex">Заказать</a>
+					</div>
+				</div>
+
+
+				<div class="prod-card__body d-flex">
+
+					<a href="#" class="prod-card__link">
+						<img src="<?php echo get_template_directory_uri();?>/img/product/pr-02.jpg" alt="">
+					</a>
+
+					<a class="prod-card__text d-flex">
+						<h4>
+							Рюкзак AVI-OUTDOOR
+						</h4>
+						<div class="prod-card__price d-flex">
+							<p class="prod-card__price-old">5 000 руб.</p>
+							<p class="prod-card__price-new">3 000 руб.</p>
+						</div>
+						<p class="prod-card__benefit">ВЫГОДА: <span>2 000 РУБ.</span></p>
+					</a>
+
+					<div class="prod-card__button d-flex">
+						<a href="#" class="prod-card__baskcet d-flex">В корзину</a>
+						<a href="#" class="prod-card__order d-flex">Заказать</a>
+					</div>
+				</div>
+
+
+				<div class="prod-card__body d-flex">
+
+					<a href="#" class="prod-card__link">
+						<img src="<?php echo get_template_directory_uri();?>/img/product/pr-03.jpg" alt="">
+					</a>
+
+					<a class="prod-card__text d-flex">
+						<h4>
+							Брелок карабин <br>
+							с компасом
+						</h4>
+						<div class="prod-card__price d-flex">
+							<p class="prod-card__price-old">99 000 руб.</p>
+							<p class="prod-card__price-new">79 000 руб.</p>
+						</div>
+						<p class="prod-card__benefit">ВЫГОДА: <span>20 000 РУБ.</span></p>
+					</a>
+
+					<div class="prod-card__button d-flex">
+						<a href="#" class="prod-card__baskcet d-flex">В корзину</a>
+						<a href="#" class="prod-card__order d-flex">Заказать</a>
+					</div>
+				</div>
+
+
+				<div class="prod-card__body d-flex">
+
+					<a href="#" class="prod-card__link">
+						<img src="<?php echo get_template_directory_uri();?>/img/product/pr-04.jpg" alt="">
+					</a>
+
+					<a class="prod-card__text d-flex">
+						<h4>
+							Погоны Полиция
+						</h4>
+						<div class="prod-card__price d-flex">
+							<p class="prod-card__price-old">5 000 руб.</p>
+							<p class="prod-card__price-new">3 000 руб.</p>
+						</div>
+						<p class="prod-card__benefit">ВЫГОДА: <span>2 000 РУБ.</span></p>
+					</a>
+
+					<div class="prod-card__button d-flex">
+						<a href="#" class="prod-card__baskcet d-flex">В корзину</a>
+						<a href="#" class="prod-card__order d-flex">Заказать</a>
+					</div>
+				</div>
+
+				<div class="prod-card__body d-flex">
+
+					<a href="#" class="prod-card__link">
+						<img src="<?php echo get_template_directory_uri();?>/img/product/pr-04.jpg" alt="">
+					</a>
+
+					<a class="prod-card__text d-flex">
+						<h4>
+							Погоны Полиция
+						</h4>
+						<div class="prod-card__price d-flex">
+							<p class="prod-card__price-old">5 000 руб.</p>
+							<p class="prod-card__price-new">3 000 руб.</p>
+						</div>
+						<p class="prod-card__benefit">ВЫГОДА: <span>2 000 РУБ.</span></p>
+					</a>
+
+					<div class="prod-card__button d-flex">
+						<a href="#" class="prod-card__baskcet d-flex">В корзину</a>
+						<a href="#" class="prod-card__order d-flex">Заказать</a>
+					</div>
+				</div>
+
+				<div class="prod-card__body d-flex">
+
+					<a href="#" class="prod-card__link">
+						<img src="<?php echo get_template_directory_uri();?>/img/product/pr-03.jpg" alt="">
+					</a>
+
+					<a class="prod-card__text d-flex">
+						<h4>
+							Брелок карабин <br>
+							с компасом
+						</h4>
+						<div class="prod-card__price d-flex">
+							<p class="prod-card__price-old">99 000 руб.</p>
+							<p class="prod-card__price-new">79 000 руб.</p>
+						</div>
+						<p class="prod-card__benefit">ВЫГОДА: <span>20 000 РУБ.</span></p>
+					</a>
+
+					<div class="prod-card__button d-flex">
+						<a href="#" class="prod-card__baskcet d-flex">В корзину</a>
+						<a href="#" class="prod-card__order d-flex">Заказать</a>
+					</div>
+				</div>
+
+				<div class="prod-card__body d-flex">
+
+					<a href="#" class="prod-card__link">
+						<img src="<?php echo get_template_directory_uri();?>/img/product/pr-02.jpg" alt="">
+					</a>
+
+					<a class="prod-card__text d-flex">
+						<h4>
+							Рюкзак AVI-OUTDOOR
+						</h4>
+						<div class="prod-card__price d-flex">
+							<p class="prod-card__price-old">5 000 руб.</p>
+							<p class="prod-card__price-new">3 000 руб.</p>
+						</div>
+						<p class="prod-card__benefit">ВЫГОДА: <span>2 000 РУБ.</span></p>
+					</a>
+
+					<div class="prod-card__button d-flex">
+						<a href="#" class="prod-card__baskcet d-flex">В корзину</a>
+						<a href="#" class="prod-card__order d-flex">Заказать</a>
+					</div>
+				</div>
+
+				<div class="prod-card__body d-flex">
+
+					<a href="#" class="prod-card__link">
+						<img src="<?php echo get_template_directory_uri();?>/img/product/pr-01.jpg" alt="">
+					</a>
+
+					<a class="prod-card__text d-flex">
+						<h4>
+							Куртка ТЕГЕРЕК <br>
+							камни олива
+						</h4>
+						<div class="prod-card__price d-flex">
+							<p class="prod-card__price-old">99 000 руб.</p>
+							<p class="prod-card__price-new">79 000 руб.</p>
+						</div>
+						<p class="prod-card__benefit">ВЫГОДА: <span>20 000 РУБ.</span></p>
+					</a>
+
+					<div class="prod-card__button d-flex">
+						<a href="#" class="prod-card__baskcet d-flex">В корзину</a>
+						<a href="#" class="prod-card__order d-flex">Заказать</a>
+					</div>
+				</div>
 
 			</div>
+
+			<nav class="pagination d-flex">
+				<div class="pagination__nav-links d-flex">
+					<a class="pagination__back" href="#"></a>
+					<span class="pagination__numbers">1</span>
+					<a class="pagination__numbers current" href="#">2</a>
+					<a class="pagination__numbers" href="#">3</a>
+					<a class="pagination__numbers" href="#">4</a>
+					<div class="pagination__block-dot d-flex">
+						<span class="pagination__dot">.</span>
+						<span class="pagination__dot">.</span>
+						<span class="pagination__dot">.</span>
+					</div>
+					<a class="pagination__numbers" href="#">10</a>
+					<a class="pagination__next" href="#"></a>
+				</div>
+			</nav>
+
+			<nav class="navigation pagination" role="navigation">
+			</nav>
 
 		</div>
 	</section>
 
-	<?php get_template_part('template-parts/logist-section');?>
+	<section class="category-description"> 
+		<div class="container">
+			<div class="category-description__text">
+				
+				<p>
+					Военная торговля — система торгово-бытового обеспечения военнослужащих, а также их семей. Российская система военной торговли носит 
+					официальное название Главное управление торговли Министерства обороны Российской Федерации (ГУТ Минобороны России), а в разговорной речи 
+					сокращенно называется военторг. Основными задачами военной торговли являются:
+					торгово-бытовое обеспечение войск (сил) на полевых учениях, манёврах и в лагерях, а также в зонах конфликтов и чрезвычайных ситуаций; 
+					обеспечение товарами и услугами военнослужащих и членов их семей в отдаленных и малочисленных гарнизонах и в закрытых административно-
+					территориальных образованиях.
+				</p>
 
-	<?php get_template_part('template-parts/advant-section');?>
+				<p>
+					Главным звеном в военной торговле являются войсковые и солдатские магазины на закрытой территории воинских частей, обеспечивающие товарами 
+					повседневного спроса военнослужащих и членов их семей, а также личный состав подразделений. Кроме продажи товаров, структуры военной 
+					торговли имеют в своей сети ателье для пошива повседневного и парадного обмундирования, фотоателье, мастерские по пошиву и ремонту обуви, 
+					часовые мастерские, прокатные пункты.
+				</p>
 
-	<!-- </main> -->
+				<p>
+					Для снабжения дальних гарнизонов и небольших воинских частей, где содержание постоянного пункта торговли экономически нецелесообразно, 
+					используются выездные торговые пункты — торговые пункты на морских судах, на средствах малой авиации, на грузовых автомобилях (так называемые 
+					автолавки). На 2017 год в соединениях и воинских частях, дислоцированных на территории России и за ее пределами, функционирует более 2300 
+					объектов «Военторга». Военная торговля — система торгово-бытового обеспечения военнослужащих, а также их семей. Российская система военной 
+					торговли носит официальное название Главное управление торговли Министерства обороны Российской Федерации (ГУТ Минобороны России), а в разговорной речи 
+					сокращенно называется военторг.
+				</p>
 
-	<?php get_footer(); ?>  
+			</div>
+		</div>
+	</section>
+
+</main>
+
+<?php get_footer(); ?>  
