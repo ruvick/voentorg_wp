@@ -12,7 +12,7 @@
 <header id="header" class="header">  
 	<div class="container">
 		<div class="header__row d-flex">
-			<a href="#" class="header__logo logo-icon"></a>
+			<a href="http://tmp.1voentorg.ru" class="header__logo logo-icon"></a>
 
 			<div class="header__info d-flex"> 
 				<div class="menu__icon icon-menu">  
