@@ -9,7 +9,21 @@
 
 			<div class="info-sl__slider slider">
 				<div class="slider__item">
-					<img src="img/sl-1.jpg" alt="">
+					<img src="<?php echo get_template_directory_uri();?>/img/sl-1.jpg" alt="">
+					<div class="info-sl__discounts">
+						Скидки до 30%
+					</div>
+					<div class="info-sl__text-new">
+						<h1>Новые поступления</h1>
+						<p>
+							С 5 по 14 февраля дарим скидку 30% 
+							на зимние куртки Random Map 
+						</p>
+					</div>
+				</div>
+
+				<div class="slider__item">
+					<img src="<?php echo get_template_directory_uri();?>/img/sl-1.jpg" alt="">
 					<div class="info-sl__discounts">
 						Скидки до 30%
 					</div>
@@ -23,7 +37,7 @@
 				</div>
 
 				<div class="slider__item">
-					<img src="img/sl-1.jpg" alt="">
+					<img src="<?php echo get_template_directory_uri();?>/img/sl-1.jpg" alt="">
 					<div class="info-sl__discounts">
 						Скидки до 30%
 					</div>
@@ -37,7 +51,7 @@
 				</div>
 
 				<div class="slider__item">
-					<img src="img/sl-1.jpg" alt="">
+					<img src="<?php echo get_template_directory_uri();?>/img/sl-1.jpg" alt="">
 					<div class="info-sl__discounts">
 						Скидки до 30%
 					</div>
@@ -51,7 +65,7 @@
 				</div>
 
 				<div class="slider__item">
-					<img src="img/sl-1.jpg" alt="">
+					<img src="<?php echo get_template_directory_uri();?>/img/sl-1.jpg" alt="">
 					<div class="info-sl__discounts">
 						Скидки до 30%
 					</div>
@@ -65,7 +79,7 @@
 				</div>
 
 				<div class="slider__item">
-					<img src="img/sl-1.jpg" alt="">
+					<img src="<?php echo get_template_directory_uri();?>/img/sl-1.jpg" alt="">
 					<div class="info-sl__discounts">
 						Скидки до 30%
 					</div>
@@ -79,21 +93,7 @@
 				</div>
 
 				<div class="slider__item">
-					<img src="img/sl-1.jpg" alt="">
-					<div class="info-sl__discounts">
-						Скидки до 30%
-					</div>
-					<div class="info-sl__text-new">
-						<h1>Новые поступления</h1>
-						<p>
-							С 5 по 14 февраля дарим скидку 30% 
-							на зимние куртки Random Map
-						</p>
-					</div>
-				</div>
-
-				<div class="slider__item">
-					<img src="img/sl-1.jpg" alt="">
+					<img src="<?php echo get_template_directory_uri();?>/img/sl-1.jpg" alt="">
 					<div class="info-sl__discounts">
 						Скидки до 30%
 					</div>
@@ -118,7 +118,7 @@
 					<div class="prod-card__body d-flex">
 
 						<a href="#" class="prod-card__link">
-							<img src="img/product/pr-01.jpg" alt="">
+							<img src="<?php echo get_template_directory_uri();?>/img/product/pr-01.jpg" alt="">
 						</a>
 
 						<a class="prod-card__text d-flex">
@@ -143,7 +143,7 @@
 					<div class="prod-card__body d-flex">
 
 						<a href="#" class="prod-card__link">
-							<img src="img/product/pr-02.jpg" alt="">
+							<img src="<?php echo get_template_directory_uri();?>/img/product/pr-02.jpg" alt="">
 						</a>
 
 						<a class="prod-card__text d-flex">
@@ -167,7 +167,7 @@
 					<div class="prod-card__body d-flex">
 
 						<a href="#" class="prod-card__link">
-							<img src="img/product/pr-03.jpg" alt="">
+							<img src="<?php echo get_template_directory_uri();?>/img/product/pr-03.jpg" alt="">
 						</a>
 
 						<a class="prod-card__text d-flex">
@@ -192,7 +192,7 @@
 					<div class="prod-card__body d-flex">
 
 						<a href="#" class="prod-card__link">
-							<img src="img/product/pr-04.jpg" alt="">
+							<img src="<?php echo get_template_directory_uri();?>/img/product/pr-04.jpg" alt="">
 						</a>
 
 						<a class="prod-card__text d-flex">
@@ -215,7 +215,7 @@
 					<div class="prod-card__body d-flex">
 
 						<a href="#" class="prod-card__link">
-							<img src="img/product/pr-04.jpg" alt="">
+							<img src="<?php echo get_template_directory_uri();?>/img/product/pr-04.jpg" alt="">
 						</a>
 
 						<a class="prod-card__text d-flex">
@@ -238,7 +238,7 @@
 					<div class="prod-card__body d-flex">
 
 						<a href="#" class="prod-card__link">
-							<img src="img/product/pr-03.jpg" alt="">
+							<img src="<?php echo get_template_directory_uri();?>/img/product/pr-03.jpg" alt="">
 						</a>
 
 						<a class="prod-card__text d-flex">
@@ -262,7 +262,7 @@
 					<div class="prod-card__body d-flex">
 
 						<a href="#" class="prod-card__link">
-							<img src="img/product/pr-02.jpg" alt="">
+							<img src="<?php echo get_template_directory_uri();?>/img/product/pr-02.jpg" alt="">
 						</a>
 
 						<a class="prod-card__text d-flex">
@@ -285,7 +285,7 @@
 					<div class="prod-card__body d-flex">
 
 						<a href="#" class="prod-card__link">
-							<img src="img/product/pr-01.jpg" alt="">
+							<img src="<?php echo get_template_directory_uri();?>/img/product/pr-01.jpg" alt="">
 						</a>
 
 						<a class="prod-card__text d-flex">
@@ -317,7 +317,7 @@
 				<div class="cards d-flex">
 
 					<a href="#" class="cards-item__img-l">
-						<img src="img/card/card-01.png" alt="">
+						<img src="<?php echo get_template_directory_uri();?>/img/card/card-01.png" alt="">
 						<div class="cards__text">
 							<h3>Военная <br>
 								одежда
@@ -329,7 +329,7 @@
 					<div class="cards-item__img-r d-flex">
 
 						<a href="#" class="cards__img cards__img-1">
-							<img src="img/card/card-02.png" alt="">
+							<img src="<?php echo get_template_directory_uri();?>/img/card/card-02.png" alt="">
 							<div class="cards__text">
 								<h3>Форменная <br>
 									одежда
@@ -339,7 +339,7 @@
 						</a>
 
 						<a href="#"class="cards__img cards__img-2">
-							<img src="img/card/card-03.png" alt="">
+							<img src="<?php echo get_template_directory_uri();?>/img/card/card-03.png" alt="">
 							<div class="cards__text">
 								<h3>Спецодежда
 								</h3>
@@ -348,7 +348,7 @@
 						</a>
 
 						<a href="#"class="cards__img cards__img-3">
-							<img src="img/card/card-04.png" alt="">
+							<img src="<?php echo get_template_directory_uri();?>/img/card/card-04.png" alt="">
 							<div class="cards__text">
 								<h3>Медицинская <br>
 									одежда
@@ -358,7 +358,7 @@
 						</a>
 
 						<a href="#" class="cards__img cards__img-4">
-							<img src="img/card/card-05.png" alt="">
+							<img src="<?php echo get_template_directory_uri();?>/img/card/card-05.png" alt="">
 							<div class="cards__text">
 								<h3>Охота <br>
 									и рыбалка
@@ -383,7 +383,7 @@
 					<div class="prod-card__body d-flex">
 
 						<a href="#" class="prod-card__link">
-							<img src="img/product/pr-01.jpg" alt="">
+							<img src="<?php echo get_template_directory_uri();?>/img/product/pr-01.jpg" alt="">
 						</a>
 
 						<a class="prod-card__text d-flex">
@@ -408,7 +408,7 @@
 					<div class="prod-card__body d-flex">
 
 						<a href="#" class="prod-card__link">
-							<img src="img/product/pr-02.jpg" alt="">
+							<img src="<?php echo get_template_directory_uri();?>/img/product/pr-02.jpg" alt="">
 						</a>
 
 						<a class="prod-card__text d-flex">
@@ -432,7 +432,7 @@
 					<div class="prod-card__body d-flex">
 
 						<a href="#" class="prod-card__link">
-							<img src="img/product/pr-03.jpg" alt="">
+							<img src="<?php echo get_template_directory_uri();?>/img/product/pr-03.jpg" alt="">
 						</a>
 
 						<a class="prod-card__text d-flex">
@@ -457,7 +457,7 @@
 					<div class="prod-card__body d-flex">
 
 						<a href="#" class="prod-card__link">
-							<img src="img/product/pr-04.jpg" alt="">
+							<img src="<?php echo get_template_directory_uri();?>/img/product/pr-04.jpg" alt="">
 						</a>
 
 						<a class="prod-card__text d-flex">

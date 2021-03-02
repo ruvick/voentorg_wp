@@ -1,9 +1,9 @@
-<header class="header-top">
+		<header class="header-top">
 	<div class="container">
 		<ul class="header-top__menu d-flex">
 			<li><a href="#">Пошив одежды</a></li>
 			<li><a href="#">Опт</a></li>
-			<li><a href="#">Оплата и доставка</a></li>
+			<li><a href="#">Оплата и доставка</a></li> 
 			<li><a href="#">Контакты</a></li>
 		</ul>
 	</div>
@@ -15,7 +15,7 @@
 			<a href="#" class="header__logo logo-icon"></a>
 
 			<div class="header__info d-flex"> 
-				<div class="menu__icon icon-menu"> 
+				<div class="menu__icon icon-menu">  
 					<span></span>
 					<span></span>
 					<span></span>
@@ -24,13 +24,14 @@
 				<div class="header__search search">
 					<input type="text" placeholder="Поиск по сайту" class="search__input input">
 					<button type="submit" tabindex="2" id="searchsubmit" class="sub-search" value=""></button>
-					<!-- <button class="mob-search"></button> -->
 				</div>
+				<button class="mob-search"></button>
 
 				<div class="header__callback callback d-flex">
 					<p><a href="tel:88007008980" class="callback__phone">8 (800) 700-89-80</a></p>
 					<a href="#" class="callback__popup">ЗАКАЗАТЬ ЗВОНОК</a>
 				</div>
+				<a href="tel:88007008980" class="mob-callback__phone"></a>
 
 				<div class="header__bascket-block d-flex">
 					<a href="#" class="header__bascket">Корзина</a>
@@ -105,50 +106,50 @@
 		</nav> -->
 
 	</div>
-	<nav class="mob-menu">
-		<div class="mob-menu__df d-flex">
-			<ul class="mob-menu__list">
-				<li><a href="#">Галантерея</a></li>
-				<li><a href="#">Головные уборы</a></li>
-				<li><a href="#">Кобуры, ремни и портупеи</a></li>
-				<li><a href="#">Маски</a></li>
-				<li><a href="#">Медали</a></li>
-				<li><a href="#">Новинки</a></li>
-				<li><a href="#">Обувь</a></li>
-			</ul>
-			<ul>
-				<li><a href="#">Одежда</a></li>
-				<li><a href="#">Печатная продукция</a></li>
-				<li><a href="#">Пневматическое оружие, сабли, шашки, ножи</a></li>
-				<li><a href="#">Погоны, шевроны, нашивки,курсовки</a></li>
-				<li><a href="#">Рюкзаки</a></li>
-				<li><a href="#">Снаряжение</a></li>
-			</ul>
-			<ul class="mob-menu__list">
-				<li><a href="#">Галантерея</a></li>
-				<li><a href="#">Головные уборы</a></li>
-				<li><a href="#">Кобуры, ремни и портупеи</a></li>
-				<li><a href="#">Маски</a></li>
-				<li><a href="#">Медали</a></li>
-				<li><a href="#">Новинки</a></li>
-				<li><a href="#">Обувь</a></li>
-			</ul>
-			<ul>
-				<li><a href="#">Одежда</a></li>
-				<li><a href="#">Печатная продукция</a></li>
-				<li><a href="#">Пневматическое оружие, сабли, шашки, ножи</a></li>
-				<li><a href="#">Погоны, шевроны, нашивки,курсовки</a></li>
-				<li><a href="#">Рюкзаки</a></li>
-				<li><a href="#">Снаряжение</a></li>
-			</ul>
-			<ul class="mob-menu__addit">
-				<li><a href="#">Помощь</a></li>
-				<li><a href="#">Оплата</a></li>
-				<li><a href="#">Доставка</a></li>
-				<li><a href="#">О компании</a></li>
-				<li><a href="#">Бренды</a></li>
-				<li><a href="#">Контакты</a></li>
-			</ul>
-		</div>
-	</nav>
+			<nav class="mob-menu">
+			<div class="mob-menu__df d-flex">
+				<ul class="mob-menu__list">
+					<li><a href="#">Галантерея</a></li>
+					<li><a href="#">Головные уборы</a></li>
+					<li><a href="#">Кобуры, ремни и портупеи</a></li>
+					<li><a href="#">Маски</a></li>
+					<li><a href="#">Медали</a></li>
+					<li><a href="#">Новинки</a></li>
+					<li><a href="#">Обувь</a></li>
+				</ul>
+				<ul>
+					<li><a href="#">Одежда</a></li>
+					<li><a href="#">Печатная продукция</a></li>
+					<li><a href="#">Пневматическое оружие, сабли, шашки, ножи</a></li>
+					<li><a href="#">Погоны, шевроны, нашивки,курсовки</a></li>
+					<li><a href="#">Рюкзаки</a></li>
+					<li><a href="#">Снаряжение</a></li>
+				</ul>
+				<ul class="mob-menu__list">
+					<li><a href="#">Галантерея</a></li>
+					<li><a href="#">Головные уборы</a></li>
+					<li><a href="#">Кобуры, ремни и портупеи</a></li>
+					<li><a href="#">Маски</a></li>
+					<li><a href="#">Медали</a></li>
+					<li><a href="#">Новинки</a></li>
+					<li><a href="#">Обувь</a></li>
+				</ul>
+				<ul>
+					<li><a href="#">Одежда</a></li>
+					<li><a href="#">Печатная продукция</a></li>
+					<li><a href="#">Пневматическое оружие, сабли, шашки, ножи</a></li>
+					<li><a href="#">Погоны, шевроны, нашивки,курсовки</a></li>
+					<li><a href="#">Рюкзаки</a></li>
+					<li><a href="#">Снаряжение</a></li>
+				</ul>
+				<ul class="mob-menu__addit">
+					<li><a href="#">Помощь</a></li>
+					<li><a href="#">Оплата</a></li>
+					<li><a href="#">Доставка</a></li>
+					<li><a href="#">О компании</a></li>
+					<li><a href="#">Бренды</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</div>
+		</nav>
 </header> 
