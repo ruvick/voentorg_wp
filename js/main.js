@@ -834,7 +834,15 @@ $('.select-prod-slider').slick({
 	autoplaySpeed: 1800,
 	asNavFor: ".select-slider-big",
 	adaptiveHeight: true,
-	vertical: true
+	vertical: true,
+	    responsive: [
+       {
+           breakpoint: 550,
+           setting: {
+              vertical: false
+       }  
+     }   
+  ] 
 });
 $('.select-slider-big').slick({
 	arrows: false,
