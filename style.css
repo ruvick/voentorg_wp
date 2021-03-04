@@ -1447,6 +1447,7 @@ body.ie .ibg img {
       border-bottom: 1px solid #000; }
 
 .header {
+  position: relative;
   background: #FFFFFF;
   min-height: 100px;
   display: -webkit-box;
@@ -2303,6 +2304,12 @@ body.ie .ibg img {
   }
   .card h2 {
     margin-left: 0;
+  }
+  .mob-menu.active {
+    display: flex;
+  }
+  .mob-menu__df {
+    flex-wrap: wrap;
   }
 }
 
