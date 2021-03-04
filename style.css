@@ -2431,10 +2431,12 @@ body.ie .ibg img {
   }
   .select-prod-slider__item {
     max-width: 100% !important;
+    padding: 3px;
   }
   .select-prod-slider__item img {
     height: 100%;
   }
+
 }
 
 @media (max-width: 543px) {
