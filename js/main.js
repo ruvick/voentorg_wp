@@ -57,9 +57,11 @@ if (iconMenu) {
 if (document.body.clientWidth>1024){
 	function hideMenu() {
 		$('.mob-menu').slideUp(600);
+		$('.menu__link-cat').removeClass('active');
 	}
 	function showMenu() {
 		$('.mob-menu').slideDown(600);
+		$('.menu__link-cat').addClass('active');
 	}
 	$(document).ready(function() {
 		$(".menu__catalogy").on("mouseover", showMenu);

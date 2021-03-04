@@ -20,7 +20,7 @@ Version: 1.0.1
 * {
   padding: 0px;
   margin: 0px;
-  border: 0px; } 
+  border: 0px; }  
 
 *,
 *:before,
@@ -1628,7 +1628,16 @@ body.ie .ibg img {
   background-position: 0 0;
   background-repeat: no-repeat;
   background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTUiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxNSAxMiI+DQogIDxpbWFnZSBpZD0idmlldy1jb21meSIgd2lkdGg9IjE1IiBoZWlnaHQ9IjEyIiB4bGluazpocmVmPSJkYXRhOmltYWdlL3BuZztiYXNlNjQsaVZCT1J3MEtHZ29BQUFBTlNVaEVVZ0FBQUE4QUFBQU1DQVlBQUFDOVF1ZmtBQUFBQkhOQ1NWUUlDQWdJZkFoa2lBQUFBTWhKUkVGVUtGUEYwQ0ZMZzFFWXhmSGZ1bUFWWnB0Z0dWZ0ViV01mUVRBTWpPTUZteXpZTElMZHVqREJxTW5xMmhZSEJzUENCTU9LWUZqWVlCOUFMajdod2ZvR2I3cm4vTys1ejdtM1VZMnJMbmI5cmhsT1l2OVhyN0JCSy9paVVZMnJkeHlGY1lhWEZNNTZpbkwyS3ZodDdmQUlCM0hiRGU3UzVLekwxRStjQjM4c2s2L1JET01CL1JUT3VnUy8wQW4rV3J0MnJRKzd4RjVVZVVJdjFjNTZpVytjQnArVTJzODRER09BK3hUTytnMGZ1QWcrL044M0gyTW5xc3pSVHJXelhtT0wvZURMSDJBOVVzbk5qOVFBQUFBQUFFbEZUa1N1UW1DQyIvPg0KPC9zdmc+DQo="); }
-
+.menu__link-cat.active:before {
+  content:'';
+  float: left;
+  width: 14px;
+  height: 14px;
+  margin-right: 6px;
+  background-position: 0 0;
+  background-repeat: no-repeat; 
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTQiIGhlaWdodD0iMTQiIHZpZXdCb3g9IjAgMCAxNCAxNCI+DQogIDxpbWFnZSBpZD0iY2xvc2UiIHdpZHRoPSIxNCIgaGVpZ2h0PSIxNCIgeGxpbms6aHJlZj0iZGF0YTppbWFnZS9wbmc7YmFzZTY0LGlWQk9SdzBLR2dvQUFBQU5TVWhFVWdBQUFBNEFBQUFPQ0FZQUFBQWZTQzNSQUFBQUJITkNTVlFJQ0FnSWZBaGtpQUFBQUlCSlJFRlVLRk90MHNFTmd6QU1BTUJqRDM3ZG9KOSsyYUI3ZENEMjZBWXNVRGJneHlDVkgwZ1FRa0FSL3NYSlNiYmpCaS8wZUdOV2poWmZmQnI4OE1TRXJvQUREWGhnRExoT0hPSGRtNEFSSlp5OVcrQVJqdnhTM3FhYU5jemh5RVZQdXhaU21PSTRaL3UrRGFhRHVGUnFibnFudzZuNmp1b0ZxRjY1cWlYL0ExeXZQayt1Kzc0UEFBQUFBRWxGVGtTdVFtQ0MiLz4NCjwvc3ZnPg0K');
+}
 .mob-search {
   display: none;
   width: 30px;
@@ -1744,8 +1753,9 @@ body.ie .ibg img {
   color: #000;
   padding-bottom: 25px; }
 
-.g-active {
-  background: #65B965; }
+.menu__catalogy .active {
+  background: #65B965;
+}
 
 .mob-menu__addit {
   display: none; }
