@@ -19,14 +19,14 @@ Version: 1.0.1
 
 * {
   padding: 0px;
-  margin: 0px;
-  border: 0px; }  
+  margin: 0px; 
+  border: 0px; }   
 
 *,
 *:before,
 *:after {
   -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
+  -webkit-box-sizing: border-box; 
   box-sizing: border-box; } 
 
 :focus,
@@ -769,6 +769,8 @@ body.ie .ibg img {
 .baloon-close {
   top: 18px !important; }
 
+
+
 .breadcrumb ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -789,7 +791,19 @@ body.ie .ibg img {
   margin-right: 5px;
   color: #a8a8a8; }
 
-.pagination {
+
+#breadcrumbs {
+  font-size: 12px;
+  line-height: 23px;
+  color: #5a5b5e; }
+#breadcrumbs a {
+  font-size: 11px;
+  line-height: 23px;
+  color: #a8a8a8; }
+
+.pagination { 
+  display: flex;
+  align-items: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center; }
@@ -800,6 +814,7 @@ body.ie .ibg img {
     -ms-flex-align: center;
     align-items: center;
     min-height: 21px; }
+  .pagination .prev,
   .pagination__back {
     height: 12px;
     display: -webkit-box;
@@ -813,6 +828,7 @@ body.ie .ibg img {
     align-items: center;
     margin-right: 37px;
     position: relative; }
+    .pagination .prev:before,
     .pagination__back:before {
       content: "";
       position: absolute;
@@ -821,6 +837,7 @@ body.ie .ibg img {
       height: 12px;
       background: url("img/icons/arrow-back.svg");
       background-repeat: no-repeat; }
+  .page-numbers,
   .pagination__numbers {
     margin-right: 20px;
     font-size: 16px; }
@@ -833,6 +850,7 @@ body.ie .ibg img {
   .pagination__dot {
     display: block;
     font-size: 16px; }
+  .pagination .next,
   .pagination__next {
     height: 12px;
     display: -webkit-box;
@@ -846,6 +864,7 @@ body.ie .ibg img {
     align-items: center;
     margin-left: 13px;
     position: relative; }
+    .pagination .next:after ,
     .pagination__next:after {
       content: "";
       position: absolute;
@@ -1972,7 +1991,7 @@ body.ie .ibg img {
 .category {
   padding: 27px 0 35px 0; }
 
-.category .breadcrumb {
+.category #breadcrumbs {
   margin-bottom: 22px; }
 
 .category h2 {

@@ -17,7 +17,7 @@
 						<h1>Новые поступления</h1>
 						<p>
 							С 5 по 14 февраля дарим скидку 30% 
-							на зимние куртки Random Map 
+							на зимние куртки Random Map  
 						</p>
 					</div>
 				</div>
@@ -115,196 +115,26 @@
 
 				<div class="prod-card d-flex">
 
-					<div class="prod-card__body d-flex">
+					<?
+					$args = array(
+						'posts_per_page' => 8,
+						'post_type' => 'voen',
+						'tax_query' => array(
+							array(
+								'taxonomy' => 'voencat',
+								'field' => 'id',
+								'terms' => array(4)
+							)
+						)
+					);
+					$query = new WP_Query($args);
 
-						<a href="#" class="prod-card__link">
-							<img src="<?php echo get_template_directory_uri();?>/img/product/pr-01.jpg" alt="">
-						</a>
-
-						<a class="prod-card__text d-flex">
-							<h4>
-								Куртка ТЕГЕРЕК <br>
-								камни олива
-							</h4>
-							<div class="prod-card__price d-flex">
-								<p class="prod-card__price-old">99 000 руб.</p>
-								<p class="prod-card__price-new">79 000 руб.</p>
-							</div>
-							<p class="prod-card__benefit">ВЫГОДА: <span>20 000 РУБ.</span></p>
-						</a>
-
-						<div class="prod-card__button d-flex">
-							<a href="#" class="prod-card__baskcet d-flex">В корзину</a>
-							<a href="#" class="prod-card__order d-flex">Заказать</a>
-						</div>
-					</div>
-
-
-					<div class="prod-card__body d-flex">
-
-						<a href="#" class="prod-card__link">
-							<img src="<?php echo get_template_directory_uri();?>/img/product/pr-02.jpg" alt="">
-						</a>
-
-						<a class="prod-card__text d-flex">
-							<h4>
-								Рюкзак AVI-OUTDOOR
-							</h4>
-							<div class="prod-card__price d-flex">
-								<p class="prod-card__price-old">5 000 руб.</p>
-								<p class="prod-card__price-new">3 000 руб.</p>
-							</div>
-							<p class="prod-card__benefit">ВЫГОДА: <span>2 000 РУБ.</span></p>
-						</a>
-
-						<div class="prod-card__button d-flex">
-							<a href="#" class="prod-card__baskcet d-flex">В корзину</a>
-							<a href="#" class="prod-card__order d-flex">Заказать</a>
-						</div>
-					</div>
-
-
-					<div class="prod-card__body d-flex">
-
-						<a href="#" class="prod-card__link">
-							<img src="<?php echo get_template_directory_uri();?>/img/product/pr-03.jpg" alt="">
-						</a>
-
-						<a class="prod-card__text d-flex">
-							<h4>
-								Брелок карабин <br>
-								с компасом
-							</h4>
-							<div class="prod-card__price d-flex">
-								<p class="prod-card__price-old">99 000 руб.</p>
-								<p class="prod-card__price-new">79 000 руб.</p>
-							</div>
-							<p class="prod-card__benefit">ВЫГОДА: <span>20 000 РУБ.</span></p>
-						</a>
-
-						<div class="prod-card__button d-flex">
-							<a href="#" class="prod-card__baskcet d-flex">В корзину</a>
-							<a href="#" class="prod-card__order d-flex">Заказать</a>
-						</div>
-					</div>
-
-
-					<div class="prod-card__body d-flex">
-
-						<a href="#" class="prod-card__link">
-							<img src="<?php echo get_template_directory_uri();?>/img/product/pr-04.jpg" alt="">
-						</a>
-
-						<a class="prod-card__text d-flex">
-							<h4>
-								Погоны Полиция
-							</h4>
-							<div class="prod-card__price d-flex">
-								<p class="prod-card__price-old">5 000 руб.</p>
-								<p class="prod-card__price-new">3 000 руб.</p>
-							</div>
-							<p class="prod-card__benefit">ВЫГОДА: <span>2 000 РУБ.</span></p>
-						</a>
-
-						<div class="prod-card__button d-flex">
-							<a href="#" class="prod-card__baskcet d-flex">В корзину</a>
-							<a href="#" class="prod-card__order d-flex">Заказать</a>
-						</div>
-					</div>
-
-					<div class="prod-card__body d-flex">
-
-						<a href="#" class="prod-card__link">
-							<img src="<?php echo get_template_directory_uri();?>/img/product/pr-04.jpg" alt="">
-						</a>
-
-						<a class="prod-card__text d-flex">
-							<h4>
-								Погоны Полиция
-							</h4>
-							<div class="prod-card__price d-flex">
-								<p class="prod-card__price-old">5 000 руб.</p>
-								<p class="prod-card__price-new">3 000 руб.</p>
-							</div>
-							<p class="prod-card__benefit">ВЫГОДА: <span>2 000 РУБ.</span></p>
-						</a>
-
-						<div class="prod-card__button d-flex">
-							<a href="#" class="prod-card__baskcet d-flex">В корзину</a>
-							<a href="#" class="prod-card__order d-flex">Заказать</a>
-						</div>
-					</div>
-
-					<div class="prod-card__body d-flex">
-
-						<a href="#" class="prod-card__link">
-							<img src="<?php echo get_template_directory_uri();?>/img/product/pr-03.jpg" alt="">
-						</a>
-
-						<a class="prod-card__text d-flex">
-							<h4>
-								Брелок карабин <br>
-								с компасом
-							</h4>
-							<div class="prod-card__price d-flex">
-								<p class="prod-card__price-old">99 000 руб.</p>
-								<p class="prod-card__price-new">79 000 руб.</p>
-							</div>
-							<p class="prod-card__benefit">ВЫГОДА: <span>20 000 РУБ.</span></p>
-						</a>
-
-						<div class="prod-card__button d-flex">
-							<a href="#" class="prod-card__baskcet d-flex">В корзину</a>
-							<a href="#" class="prod-card__order d-flex">Заказать</a>
-						</div>
-					</div>
-
-					<div class="prod-card__body d-flex">
-
-						<a href="#" class="prod-card__link">
-							<img src="<?php echo get_template_directory_uri();?>/img/product/pr-02.jpg" alt="">
-						</a>
-
-						<a class="prod-card__text d-flex">
-							<h4>
-								Рюкзак AVI-OUTDOOR
-							</h4>
-							<div class="prod-card__price d-flex">
-								<p class="prod-card__price-old">5 000 руб.</p>
-								<p class="prod-card__price-new">3 000 руб.</p>
-							</div>
-							<p class="prod-card__benefit">ВЫГОДА: <span>2 000 РУБ.</span></p>
-						</a>
-
-						<div class="prod-card__button d-flex">
-							<a href="#" class="prod-card__baskcet d-flex">В корзину</a>
-							<a href="#" class="prod-card__order d-flex">Заказать</a>
-						</div>
-					</div>
-
-					<div class="prod-card__body d-flex">
-
-						<a href="#" class="prod-card__link">
-							<img src="<?php echo get_template_directory_uri();?>/img/product/pr-01.jpg" alt="">
-						</a>
-
-						<a class="prod-card__text d-flex">
-							<h4>
-								Куртка ТЕГЕРЕК <br>
-								камни олива
-							</h4>
-							<div class="prod-card__price d-flex">
-								<p class="prod-card__price-old">99 000 руб.</p>
-								<p class="prod-card__price-new">79 000 руб.</p>
-							</div>
-							<p class="prod-card__benefit">ВЫГОДА: <span>20 000 РУБ.</span></p>
-						</a>
-
-						<div class="prod-card__button d-flex">
-							<a href="#" class="prod-card__baskcet d-flex">В корзину</a>
-							<a href="#" class="prod-card__order d-flex">Заказать</a>
-						</div>
-					</div>
+					foreach( $query->posts as $post ){
+						$query->the_post();
+						get_template_part('template-parts/product-elem');
+					}  
+					wp_reset_postdata();
+					?>
 
 				</div>
 
@@ -380,102 +210,26 @@
 
 				<div class="prod-card d-flex">
 
-					<div class="prod-card__body d-flex">
+					<?
+					$args = array(
+						'posts_per_page' => 8,
+						'post_type' => 'voen',
+						'tax_query' => array(
+							array(
+								'taxonomy' => 'voencat',
+								'field' => 'id',
+								'terms' => array(5)
+							)
+						)
+					);
+					$query = new WP_Query($args);
 
-						<a href="#" class="prod-card__link">
-							<img src="<?php echo get_template_directory_uri();?>/img/product/pr-01.jpg" alt="">
-						</a>
-
-						<a class="prod-card__text d-flex">
-							<h4>
-								Куртка ТЕГЕРЕК <br>
-								камни олива
-							</h4>
-							<div class="prod-card__price d-flex">
-								<p class="prod-card__price-old">99 000 руб.</p>
-								<p class="prod-card__price-new">79 000 руб.</p>
-							</div>
-							<p class="prod-card__benefit">ВЫГОДА: <span>20 000 РУБ.</span></p>
-						</a>
-
-						<div class="prod-card__button d-flex">
-							<a href="#" class="prod-card__baskcet d-flex">В корзину</a>
-							<a href="#" class="prod-card__order d-flex">Заказать</a>
-						</div>
-					</div>
-
-
-					<div class="prod-card__body d-flex">
-
-						<a href="#" class="prod-card__link">
-							<img src="<?php echo get_template_directory_uri();?>/img/product/pr-02.jpg" alt="">
-						</a>
-
-						<a class="prod-card__text d-flex">
-							<h4>
-								Рюкзак AVI-OUTDOOR
-							</h4>
-							<div class="prod-card__price d-flex">
-								<p class="prod-card__price-old">5 000 руб.</p>
-								<p class="prod-card__price-new">3 000 руб.</p>
-							</div>
-							<p class="prod-card__benefit">ВЫГОДА: <span>2 000 РУБ.</span></p>
-						</a>
-
-						<div class="prod-card__button d-flex">
-							<a href="#" class="prod-card__baskcet d-flex">В корзину</a>
-							<a href="#" class="prod-card__order d-flex">Заказать</a>
-						</div>
-					</div>
-
-
-					<div class="prod-card__body d-flex">
-
-						<a href="#" class="prod-card__link">
-							<img src="<?php echo get_template_directory_uri();?>/img/product/pr-03.jpg" alt="">
-						</a>
-
-						<a class="prod-card__text d-flex">
-							<h4>
-								Брелок карабин <br>
-								с компасом
-							</h4>
-							<div class="prod-card__price d-flex">
-								<p class="prod-card__price-old">99 000 руб.</p>
-								<p class="prod-card__price-new">79 000 руб.</p>
-							</div>
-							<p class="prod-card__benefit">ВЫГОДА: <span>20 000 РУБ.</span></p>
-						</a>
-
-						<div class="prod-card__button d-flex">
-							<a href="#" class="prod-card__baskcet d-flex">В корзину</a>
-							<a href="#" class="prod-card__order d-flex">Заказать</a>
-						</div>
-					</div>
-
-
-					<div class="prod-card__body d-flex">
-
-						<a href="#" class="prod-card__link">
-							<img src="<?php echo get_template_directory_uri();?>/img/product/pr-04.jpg" alt="">
-						</a>
-
-						<a class="prod-card__text d-flex">
-							<h4>
-								Погоны Полиция
-							</h4>
-							<div class="prod-card__price d-flex">
-								<p class="prod-card__price-old">5 000 руб.</p>
-								<p class="prod-card__price-new">3 000 руб.</p>
-							</div>
-							<p class="prod-card__benefit">ВЫГОДА: <span>2 000 РУБ.</span></p>
-						</a>
-
-						<div class="prod-card__button d-flex">
-							<a href="#" class="prod-card__baskcet d-flex">В корзину</a>
-							<a href="#" class="prod-card__order d-flex">Заказать</a>
-						</div>
-					</div>
+					foreach( $query->posts as $post ){
+						$query->the_post();
+						get_template_part('template-parts/product-elem');
+					}  
+					wp_reset_postdata();
+					?>
 
 				</div>
 
@@ -485,4 +239,4 @@
 
 	</main>
 
-<?php get_footer(); ?>
+	<?php get_footer(); ?>

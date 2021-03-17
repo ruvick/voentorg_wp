@@ -14,7 +14,7 @@ get_header(); ?>
 			<section class="card"> 
 				<div class="container">
 
-					<div class="breadcrumb">
+					<div class="breadcrumb"> 
 						<ul>
 							<li><a href="#">Главная</a></li>
 							<li><a href="#">/ Охота и рыбалка</a></li>
