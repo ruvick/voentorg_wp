@@ -18,7 +18,7 @@
 						<div class="menu__icon icon-menu">  
 							<span></span>
 							<span></span>
-							<span></span>
+							<span></span> 
 						</div>
 
 						<div class="header__search search">
@@ -28,10 +28,10 @@
 						<button class="mob-search"></button>
 
 						<div class="header__callback callback d-flex">
-							<p><a href="tel:88007008980" class="callback__phone">8 (800) 700-89-80</a></p>
+							<p><a href="tel:<? echo preg_replace('/[^0-9]/', '', $tel); ?>" class="callback__phone"><? echo $tel = carbon_get_theme_option("as_phones_1"); ?></a></p>
 							<a href="#" class="callback__popup">ЗАКАЗАТЬ ЗВОНОК</a>
 						</div>
-						<a href="tel:88007008980" class="mob-callback__phone"></a>
+						<a href="tel:<? echo preg_replace('/[^0-9]/', '', $tel); ?>" class="mob-callback__phone"></a>
 
 						<div class="header__bascket-block d-flex">
 							<a href="#" class="header__bascket">Корзина</a>

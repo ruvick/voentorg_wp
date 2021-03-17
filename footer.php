@@ -16,7 +16,7 @@
           <ul>
             <li><a href="#">Опт</a></li>
             <li><a href="#">Пошив одежды</a></li>
-            <li><a href="#">Контакты</a></li>
+            <li><a href="#">Контакты</a></li> 
           </ul>
         </div>
 
@@ -26,7 +26,7 @@
             <li>Заказывайте через сайт в любое время суток</li>
           </ul>
           <div class="header__callback callback d-flex">
-            <p><a href="tel:88007008980" class="callback__phone">8 (800) 700-89-80</a></p>
+            <p><a href="tel:<? echo preg_replace('/[^0-9]/', '', $tel); ?>" class="callback__phone"><? echo $tel = carbon_get_theme_option("as_phones_1"); ?></a></p>
             <a href="#" class="callback__popup">ЗАКАЗАТЬ ЗВОНОК</a>
           </div>
         </div>
