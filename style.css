@@ -132,6 +132,7 @@ h3 {
   -ms-flex-direction: column;
   flex-direction: column; }
 
+main,
 .page {
   -webkit-box-flex: 1;
   -ms-flex: 1 1 auto;
@@ -2152,6 +2153,23 @@ body.ie .ibg img {
   background: #65B965;
   border-radius: 10px;
   color: #fff; }
+
+.content {
+  padding: 35px 0;
+}
+.content h1 {
+  font-size: 30px;
+  line-height: 36px;
+  margin-bottom: 38px;
+  font-weight: 400;
+}
+
+.block__map {
+  height: 400px;
+}
+
+
+
 
 @media (max-width: 1200px) {
   .slick-prev {

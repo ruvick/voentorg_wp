@@ -9,7 +9,7 @@
 
 
 use Carbon_Fields\Container;
-use Carbon_Fields\Field;
+use Carbon_Fields\Field; 
 
 Container::make( 'theme_options', 'as_theme_options', 'Настройки темы' )
     ->add_tab('Главная', array(
@@ -66,10 +66,10 @@ Container::make( 'theme_options', 'as_theme_options', 'Настройки тем
         //   ->set_width(50),
         // Field::make( 'text', 'as_telegr', __( 'telegram' ) )
         //   ->set_width(50),
-        // Field::make('text', 'map_point', 'Координаты карты')
-        //   ->set_width(50),
-        // Field::make('text', 'text_map', 'Текст метки карты')
-        //   ->set_width(50),
+        Field::make('text', 'map_point', 'Координаты карты')
+          ->set_width(50),
+        Field::make('text', 'text_map', 'Текст метки карты')
+          ->set_width(50),
     ) );
     
 Container::make('post_meta', 'voen_product_cr', 'Характеристики товара')
