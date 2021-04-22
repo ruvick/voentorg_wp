@@ -15,13 +15,11 @@
 		<div class="container">
 
 		<div class="bread-crumbs-box">
-			<div class="container">
 				<?php
 					if ( function_exists('yoast_breadcrumb') ) {
 					yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
 					}
 				?>  
-			</div>
 		</div>
 			<h1><?php the_title();?></h1>
 
@@ -38,7 +36,9 @@
 				<li>Тел: <a href="tel:<? echo preg_replace('/[^0-9]/', '', $tel); ?>"><? echo $tel = carbon_get_theme_option("as_phones_1"); ?></a></li>
 			</ul>
 
-			<div class="block__map" id="map"></div>
+		</div>
+
+		<div class="block__map" id="map"></div>
 <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
 
 <script>
@@ -83,8 +83,6 @@
     						}
     					</script>
 
-
-		</div>
 	</section>
 
 </main>
