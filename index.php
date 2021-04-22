@@ -13,7 +13,7 @@
 					<div class="info-sl__discounts">
 						Скидки до 30%
 					</div>
-					<div class="info-sl__text-new">
+					<div class="info-sl__text-new"> 
 						<h1>Новые поступления</h1>
 						<p>
 							С 5 по 14 февраля дарим скидку 30% 

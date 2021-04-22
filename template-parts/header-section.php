@@ -1,11 +1,6 @@
 		<header class="header-top">
 			<div class="container">
-				<ul class="header-top__menu d-flex">
-					<li><a href="#">Пошив одежды</a></li>
-					<li><a href="#">Опт</a></li>
-					<li><a href="#">Оплата и доставка</a></li> 
-					<li><a href="#">Контакты</a></li>
-				</ul>
+				<?php wp_nav_menu( array('theme_location' => 'menu_corp','menu_class' => 'header-top__menu','container_class' => 'header-top__menu','container' => false )); ?>
 			</div>
 		</header> 
 
@@ -95,14 +90,15 @@
 		<header class="header-bottom">
 			<div class="container">
 				<div class="menu__body">
-					<ul class="menu__list d-flex">
+					<!-- <ul class="menu__list d-flex">
 						<li class="menu__catalogy"><a href="#" class="menu__link menu__link-cat">Каталог</a></li>
 						<li><a href="#" class="menu__link">Туризм</a></li>
 						<li><a href="#" class="menu__link">Спецодежда</a></li>
 						<li><a href="#" class="menu__link">Страйкбол</a></li>
 						<li><a href="#" class="menu__link">Сувенирная продукция</a></li> 
 						<li><a href="#" class="menu__link">Форменная одежда</a></li>
-					</ul>
+					</ul> -->
+					<?php wp_nav_menu( array('theme_location' => 'menu_main','menu_class' => 'menu__list','container_class' => 'menu__list','container' => false )); ?>
 				</div>
 
 			</div>

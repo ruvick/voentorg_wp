@@ -16,7 +16,7 @@ require_once __DIR__ . '/inc/custom-fields-options/theme-options.php';
 add_action( 'after_setup_theme', 'crb_load' );
 function crb_load() {
 require_once( get_template_directory() . '/inc/carbon-fields/vendor/autoload.php' );
-\Carbon_Fields\Carbon_Fields::boot();  
+\Carbon_Fields\Carbon_Fields::boot();   
 }
 
 
@@ -69,10 +69,25 @@ if ( ! function_exists( 'voentorg_setup' ) ) :
 // } );
 		register_nav_menus(
 			array(
-				'menu-1' => esc_html__( 'Меню в шапке', 'lipsky' ),
-				'menu-2' => esc_html__( 'Мобильное меню', 'lipsky' ),
+				'menu_corp' => 'Общекорпоративное меню (верхняя шапка)', 
+				'menu_main' => 'Меню основное',
+				'menu_cat' => 'Меню каталога', 
 			)
 		);
+
+		add_filter( 'nav_menu_css_class', 'change_menu_item_css_classes', 10, 4 );
+		
+		function change_menu_item_css_classes( $classes, $item, $args, $depth ) {
+			// if( 30 === $item->ID  && 'menu_corp' === $args->theme_location ){
+			// 	$classes[] = 'link__drop-down';
+			// }
+		
+			if( 59 === $item->ID  && 'menu_main' === $args->theme_location ){
+				$classes[] = 'menu__catalogy menu__link-cat';
+			}
+		
+			return $classes;
+		}
 
 		/*
 		 * Switch default core markup for search form, comment form, and comments

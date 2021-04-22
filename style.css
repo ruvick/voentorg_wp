@@ -5,7 +5,7 @@ Author: ruvick
 Author URI: 
 Version: 1.0.1  
 */
-
+ 
 @charset "UTF-8";
 
 @import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap");
@@ -123,7 +123,7 @@ h3 {
 .wrapper {
   width: 100%;
   min-height: 100%;
-  overflow: hidden;
+  overflow: hidden; 
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1455,6 +1455,7 @@ body.ie .ibg img {
   -ms-flex-align: center;
   align-items: center; }
   .header-top__menu {
+    display: flex;
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end; }
@@ -1618,10 +1619,12 @@ body.ie .ibg img {
 .menu__list {
   max-width: 920px;
   width: 100%;
+  display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between; }
 
+.menu__list  a,
 .menu__link {
   min-height: 56px;
   display: -webkit-box;
@@ -1635,11 +1638,11 @@ body.ie .ibg img {
   justify-content: center;
   color: #fff; }
 
-.menu__link-cat {
+.menu__link-cat a {
   width: 142px;
   background: #2E2E2E; }
 
-.menu__link-cat:before {
+.menu__link-cat a:before {
   content: '';
   float: left;
   width: 15px;
@@ -1648,7 +1651,7 @@ body.ie .ibg img {
   background-position: 0 0;
   background-repeat: no-repeat;
   background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTUiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxNSAxMiI+DQogIDxpbWFnZSBpZD0idmlldy1jb21meSIgd2lkdGg9IjE1IiBoZWlnaHQ9IjEyIiB4bGluazpocmVmPSJkYXRhOmltYWdlL3BuZztiYXNlNjQsaVZCT1J3MEtHZ29BQUFBTlNVaEVVZ0FBQUE4QUFBQU1DQVlBQUFDOVF1ZmtBQUFBQkhOQ1NWUUlDQWdJZkFoa2lBQUFBTWhKUkVGVUtGUEYwQ0ZMZzFFWXhmSGZ1bUFWWnB0Z0dWZ0ViV01mUVRBTWpPTUZteXpZTElMZHVqREJxTW5xMmhZSEJzUENCTU9LWUZqWVlCOUFMajdod2ZvR2I3cm4vTys1ejdtM1VZMnJMbmI5cmhsT1l2OVhyN0JCSy9paVVZMnJkeHlGY1lhWEZNNTZpbkwyS3ZodDdmQUlCM0hiRGU3UzVLekwxRStjQjM4c2s2L1JET01CL1JUT3VnUy8wQW4rV3J0MnJRKzd4RjVVZVVJdjFjNTZpVytjQnArVTJzODRER09BK3hUTytnMGZ1QWcrL044M0gyTW5xc3pSVHJXelhtT0wvZURMSDJBOVVzbk5qOVFBQUFBQUFFbEZUa1N1UW1DQyIvPg0KPC9zdmc+DQo="); }
-.menu__link-cat.active:before {
+.menu__link-cat a.active:before {
   content:'';
   float: left;
   width: 14px;
