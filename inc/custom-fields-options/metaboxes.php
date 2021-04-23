@@ -20,15 +20,17 @@ Container::make( 'theme_options', 'as_theme_options', 'Настройки тем
       Field::make('text', 'about_home_title', 'Заголовок на главной'),
       Field::make('rich_text', 'about_home', 'О нашей компании') 
     ))
-    ->add_tab('Баннер', array(
-      Field::make('complex', 'auto_banner', 'Баннер на главной')
+    ->add_tab('Слайдер', array(
+      Field::make('complex', 'slider_index', 'Слайдер на главной')
         ->add_fields(array(
-          Field::make('image', 'auto_banner_img', 'Картинка')
-            ->set_width(30),
-          Field::make('text', 'auto_banner_title', 'Заголовок на главной')
-            ->set_width(30),
-          Field::make('text', 'auto_banner_subtitle', 'Подзаголовок на главной')
-            ->set_width(30),
+          Field::make('image', 'slider_img', 'Картинка слайдера')
+            ->set_width(50),
+          Field::make('text', 'slider_title', 'Заголовок слайдера')
+            ->set_width(50),
+          Field::make('text', 'slider_subtitle', 'Подзаголовок слайдера')
+            ->set_width(50),
+          Field::make('text', 'slider_discount', 'Скидка слайдера')
+            ->set_width(50),
         ))
     ))
     ->add_tab('Текст в подвале', array(

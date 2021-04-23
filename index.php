@@ -8,104 +8,29 @@
 		<div class="container">
 
 			<div class="info-sl__slider slider">
-				<div class="slider__item">
-					<img src="<?php echo get_template_directory_uri();?>/img/sl-1.jpg" alt="">
-					<div class="info-sl__discounts">
-						Скидки до 30%
-					</div>
-					<div class="info-sl__text-new"> 
-						<h1>Новые поступления</h1>
-						<p>
-							С 5 по 14 февраля дарим скидку 30% 
-							на зимние куртки Random Map  
-						</p>
-					</div>
-				</div>
-
-				<div class="slider__item">
-					<img src="<?php echo get_template_directory_uri();?>/img/sl-1.jpg" alt="">
-					<div class="info-sl__discounts">
-						Скидки до 30%
-					</div>
-					<div class="info-sl__text-new">
-						<h1>Новые поступления</h1>
-						<p>
-							С 5 по 14 февраля дарим скидку 30% 
-							на зимние куртки Random Map
-						</p>
-					</div>
-				</div>
-
-				<div class="slider__item">
-					<img src="<?php echo get_template_directory_uri();?>/img/sl-1.jpg" alt="">
-					<div class="info-sl__discounts">
-						Скидки до 30%
-					</div>
-					<div class="info-sl__text-new">
-						<h1>Новые поступления</h1>
-						<p>
-							С 5 по 14 февраля дарим скидку 30% 
-							на зимние куртки Random Map
-						</p>
-					</div>
-				</div>
-
-				<div class="slider__item">
-					<img src="<?php echo get_template_directory_uri();?>/img/sl-1.jpg" alt="">
-					<div class="info-sl__discounts">
-						Скидки до 30%
-					</div>
-					<div class="info-sl__text-new">
-						<h1>Новые поступления</h1>
-						<p>
-							С 5 по 14 февраля дарим скидку 30% 
-							на зимние куртки Random Map
-						</p>
-					</div>
-				</div>
-
-				<div class="slider__item">
-					<img src="<?php echo get_template_directory_uri();?>/img/sl-1.jpg" alt="">
-					<div class="info-sl__discounts">
-						Скидки до 30%
-					</div>
-					<div class="info-sl__text-new">
-						<h1>Новые поступления</h1>
-						<p>
-							С 5 по 14 февраля дарим скидку 30% 
-							на зимние куртки Random Map
-						</p>
-					</div>
-				</div>
-
-				<div class="slider__item">
-					<img src="<?php echo get_template_directory_uri();?>/img/sl-1.jpg" alt="">
-					<div class="info-sl__discounts">
-						Скидки до 30%
-					</div>
-					<div class="info-sl__text-new">
-						<h1>Новые поступления</h1>
-						<p>
-							С 5 по 14 февраля дарим скидку 30% 
-							на зимние куртки Random Map
-						</p>
-					</div>
-				</div>
-
-				<div class="slider__item">
-					<img src="<?php echo get_template_directory_uri();?>/img/sl-1.jpg" alt="">
-					<div class="info-sl__discounts">
-						Скидки до 30%
-					</div>
-					<div class="info-sl__text-new">
-						<h1>Новые поступления</h1>
-						<p>
-							С 5 по 14 февраля дарим скидку 30% 
-							на зимние куртки Random Map
-						</p>
-					</div>
-				</div>
-
+						<?
+							$pict = carbon_get_theme_option('slider_index');
+							if($pict) {
+								$pictIndex = 0;
+								foreach($pict as $item) { 
+									?>
+								<div class="slider__item">
+									<img src="<?php echo wp_get_attachment_image_src($item['slider_img'], 'full')[0];?>" alt="">
+									<div class="info-sl__discounts">
+										<? echo $item['slider_discount']; ?>
+									</div>
+									<div class="info-sl__text-new">  
+										<h1><? echo $item['slider_title']; ?></h1>
+										<p>
+											<? echo $item['slider_subtitle']; ?>
+										</p>
+									</div>
+								</div>
+									<?
+									$pictIndex++;
+								}
+							}
+						?>
 			</div>
 		</section>
 
