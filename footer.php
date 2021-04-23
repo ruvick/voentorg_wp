@@ -8,8 +8,8 @@
             <li>ИНН: 463243717316</li>
             <li>ОГРН: 318463200015264</li>
           </ul>
-          <p class="footer__policy"><a href="">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a></p>
-          <p class="footer__developer"><a href="">Разработка сайта: Asmi-Studio.ru</a></p>
+          <p class="footer__policy"><a href="<?php echo get_permalink(88);?>">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a></p>
+          <p class="footer__developer"><a href="https://asmi-studio.ru">Разработка сайта: Asmi-Studio.ru</a></p>
         </div>
 
         <div class="footer-menu">
