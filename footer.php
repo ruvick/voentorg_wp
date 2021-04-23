@@ -4,9 +4,9 @@
         
         <div class="footer-menu">
           <ul>
-            <li>ИП Ваганова Л.Ю.</li>
-            <li>ИНН: 463243717316</li>
-            <li>ОГРН: 318463200015264</li>
+            <li><? echo carbon_get_theme_option("as_company"); ?></li>
+            <li>ИНН: <? echo carbon_get_theme_option("as_inn"); ?></li>
+            <li>ОГРН: <? echo carbon_get_theme_option("as_orgn"); ?></li>
           </ul>
           <p class="footer__policy"><a href="<?php echo get_permalink(88);?>">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a></p>
           <p class="footer__developer"><a href="https://asmi-studio.ru">Разработка сайта: Asmi-Studio.ru</a></p>
@@ -18,8 +18,8 @@
 
         <div class="footer-menu">
           <ul>
-            <li>Звоните в любой день с 9:00 до 21:00</li>
-            <li>Заказывайте через сайт в любое время суток</li>
+            <li><? echo carbon_get_theme_option("footer_text_1"); ?></li> 
+            <li><? echo carbon_get_theme_option("footer_text_2"); ?></li>
           </ul>
           <div class="header__callback callback d-flex">
             <p><a href="tel:<? echo preg_replace('/[^0-9]/', '', $tel); ?>" class="callback__phone"><? echo $tel = carbon_get_theme_option("as_phones_1"); ?></a></p>

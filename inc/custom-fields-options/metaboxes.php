@@ -18,7 +18,7 @@ Container::make( 'theme_options', 'as_theme_options', 'Настройки тем
       Field::make( 'image', 'as_logo_white', 'Логотип в подвале')
         ->set_width(30),
       Field::make('text', 'about_home_title', 'Заголовок на главной'),
-      Field::make('rich_text', 'about_home', 'О нашей компании')
+      Field::make('rich_text', 'about_home', 'О нашей компании') 
     ))
     ->add_tab('Баннер', array(
       Field::make('complex', 'auto_banner', 'Баннер на главной')
@@ -30,6 +30,12 @@ Container::make( 'theme_options', 'as_theme_options', 'Настройки тем
           Field::make('text', 'auto_banner_subtitle', 'Подзаголовок на главной')
             ->set_width(30),
         ))
+    ))
+    ->add_tab('Текст в подвале', array(
+          Field::make('text', 'footer_text_1', 'Текст 1')
+            ->set_width(30),
+          Field::make('text', 'footer_text_2', 'Текст 2')
+            ->set_width(30),
     ))
     ->add_tab('Контакты', array(
         Field::make( 'text', 'as_company', __( 'Название' ) )
