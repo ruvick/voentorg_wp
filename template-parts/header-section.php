@@ -80,7 +80,7 @@
 							<li><a href="#">Доставка</a></li>
 							<li><a href="#">О компании</a></li>
 							<li><a href="#">Бренды</a></li>
-							<li><a href="#">Контакты</a></li>
+							<li><a href="#">Контакты</a></li> 
 						</ul>
 					</div>
 				</nav>
@@ -90,14 +90,6 @@
 		<header class="header-bottom">
 			<div class="container">
 				<div class="menu__body">
-					<!-- <ul class="menu__list d-flex">
-						<li class="menu__catalogy"><a href="#" class="menu__link menu__link-cat">Каталог</a></li>
-						<li><a href="#" class="menu__link">Туризм</a></li>
-						<li><a href="#" class="menu__link">Спецодежда</a></li>
-						<li><a href="#" class="menu__link">Страйкбол</a></li>
-						<li><a href="#" class="menu__link">Сувенирная продукция</a></li> 
-						<li><a href="#" class="menu__link">Форменная одежда</a></li>
-					</ul> -->
 					<?php wp_nav_menu( array('theme_location' => 'menu_main','menu_class' => 'menu__list','container_class' => 'menu__list','container' => false )); ?>
 				</div>
 

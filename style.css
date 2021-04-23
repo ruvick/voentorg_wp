@@ -2219,9 +2219,13 @@ body.ie .ibg img {
   list-style-type: disc;
 }
 
+.footer-menu .header-top__menu {
+  flex-direction: column;
+}
 
-
-
+.footer-menu .header-top__menu .menu-item-83 {
+  display: none;
+}
 
 
 @media (max-width: 1200px) {

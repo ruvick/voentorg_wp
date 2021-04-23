@@ -13,11 +13,7 @@
         </div>
 
         <div class="footer-menu">
-          <ul>
-            <li><a href="#">Опт</a></li>
-            <li><a href="#">Пошив одежды</a></li>
-            <li><a href="#">Контакты</a></li> 
-          </ul>
+          <?php wp_nav_menu( array('theme_location' => 'menu_corp','menu_class' => 'header-top__menu','container_class' => 'header-top__menu','container' => false )); ?>
         </div>
 
         <div class="footer-menu">
