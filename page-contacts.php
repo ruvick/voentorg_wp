@@ -11,7 +11,7 @@
 
 <main class="main page">	
 
-	<section class = "contacts content">
+	<section class = "contacts">
 		<div class="container">
 
 		<div class="bread-crumbs-box">

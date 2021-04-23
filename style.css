@@ -2154,11 +2154,20 @@ body.ie .ibg img {
   border-radius: 10px;
   color: #fff; }
 
-.content {
-  padding: 27px 0;
-}
+
 .contacts {
   padding: 27px 0 0 0;
+}
+
+.contacts h1 {
+  font-size: 30px;
+  line-height: 36px;
+  margin-bottom: 38px;
+  font-weight: 400;
+}
+
+.content {
+  padding: 27px 0;
 }
 .content h1 {
   font-size: 30px;
@@ -2182,6 +2191,36 @@ body.ie .ibg img {
 .ymaps-2-1-78-map-copyrights-promo {
   display: none !important;
 }
+
+
+.content h2,
+.content h3,
+.content h4,
+.content h5,
+.content h6, {
+  margin-bottom: 8px;
+}
+
+.content p {
+  margin-bottom: 8px;
+}
+
+.content ol,
+.content ul {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-left: 30px;
+}
+.content ol li,
+.content ul li {
+  margin-bottom: 8px;
+}
+.content ul li {
+  list-style-type: disc;
+}
+
+
+
 
 
 
