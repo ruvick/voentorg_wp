@@ -179,6 +179,17 @@ $(document).ready(function () {
 	$(".fancybox").fancybox();
 
 
+	$(".callback__popup").on('click', function (e) {
+		e.preventDefault();
+		jQuery("#agriwind").arcticmodal();
+	});
+
+
+
+
+
+
+
 });
 
 

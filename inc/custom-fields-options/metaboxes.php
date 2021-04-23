@@ -29,7 +29,7 @@ Container::make( 'theme_options', 'as_theme_options', 'Настройки тем
             ->set_width(50),
           Field::make('text', 'slider_subtitle', 'Подзаголовок слайдера')
             ->set_width(50),
-          Field::make('text', 'slider_discount', 'Скидка слайдера')
+          Field::make('text', 'slider_discount', 'Информация о скидке')
             ->set_width(50),
         ))
     ))

@@ -2209,7 +2209,7 @@ body.ie .ibg img {
 .content ul {
   margin-top: 20px;
   margin-bottom: 20px;
-  padding-left: 30px;
+  padding-left: 30px; 
 }
 .content ol li,
 .content ul li {
@@ -2226,6 +2226,63 @@ body.ie .ibg img {
 .footer-menu .header-top__menu .menu-item-83 {
   display: none;
 }
+
+.box-modal {
+  max-width: 480px;
+  width: 100%;
+  background-color: #f2f2f2;
+  background: #f5f5f5;
+  padding: 80px 35px 35px 35px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.box-modal_close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  cursor: pointer;
+}
+
+.box-modal__img {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 28%;
+}
+
+.box-modal h3 {
+  font-size: 23px;
+  margin-bottom: 35px;
+}
+
+.SendetMsg {
+  padding: 10px 0;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.reviews__form-input {
+  height: 45px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  min-width: 0 !important;
+  border: 1px solid #1dc17b;
+  display: inline-block;
+}
+
+.box-modal button {
+  margin-top: 20px;
+  width: 180px;
+  height: 40px;
+  background: #65B965;
+  border-radius: 5px;
+  color: #fff;
+}
+
+
+
 
 
 @media (max-width: 1200px) {

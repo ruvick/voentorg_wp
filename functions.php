@@ -7,6 +7,9 @@
  * @package voentorg
  */
 
+define("COMPANY_NAME", "Магазин Военторг");
+define("MAIL_RESEND", "noreply@agribest.ru");
+
 add_action( 'carbon_fields_register_fields', 'boots_register_custom_fields' );
 function boots_register_custom_fields() {
 // путь к пользовательскому файлу определения поля (полей), измените под себя
@@ -169,44 +172,50 @@ function voentorg_widgets_init() {
 		)
 	);
 }
-// add_action( 'widgets_init', 'voentorg_widgets_init' ); 
 
-/**
- * Enqueue scripts and styles.
- */
 
-// Описываем функцию в которй будем подключать CSS и JS
-function voentorg_scripts_styles(){
-    global $wp_styles;
-
-	wp_enqueue_style("voentorg-fancybox", get_template_directory_uri()."/css/fancybox.css", array(), $style_version, 'all'); 
-
-	wp_enqueue_style( 'voentorg-style', get_stylesheet_uri() );
-
-	wp_enqueue_script( 'jquery');
-
-	wp_enqueue_script( 'voentorg-fancybox', get_template_directory_uri() . '/js/jquery.fancybox.min.js', array(), '1.0', true ); 
-
-	wp_enqueue_script( 'voentorg-inputmask', get_template_directory_uri() . '/js/jquery.inputmask.bundle.js', array(), 1.0, true );
-
-	wp_enqueue_script( 'voentorg-slick', get_template_directory_uri() . '/js/slick.min.js', array(), '1.0', true ); 
-
-	wp_enqueue_script( 'voentorg-main', get_template_directory_uri() . '/js/main.js', array(), 1.0, true );
-
-	wp_localize_script( 'voentorg-main', 'allAjax', array(
-      'ajaxurl' => admin_url( 'admin-ajax.php' ),
-      'nonce'   => wp_create_nonce( 'NEHERTUTLAZIT' )
-    ) );
-
-	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
-		wp_enqueue_script( 'comment-reply' );
-	}
+// Подключение стилей и nonce для Ajax в админку 
+add_action('admin_head', 'my_assets_admin');
+function my_assets_admin(){
+	wp_enqueue_style("style-adm",get_template_directory_uri()."/style-admin.css");
+	
+	wp_localize_script( 'jquery', 'allAjax', array(
+			'nonce'   => wp_create_nonce( 'NEHERTUTLAZIT' )
+		) );
 }
 
-// Добавляем action для запуска этой функции
-add_action( 'wp_enqueue_scripts', 'voentorg_scripts_styles', 1 );
+// Подключение стилей и nonce для Ajax и скриптов во фронтенд 
+define("ALL_VERSION", "1.0.5");
+add_action( 'wp_enqueue_scripts', 'my_assets' );
+	function my_assets() {
 
+		// Подключение стилей 
+		wp_enqueue_style("style-modal", get_template_directory_uri()."/css/jquery.arcticmodal-0.3.css", array(), ALL_VERSION, 'all'); //Модальные окна (стили)
 
+		wp_enqueue_style("voentorg-fancybox", get_template_directory_uri()."/css/fancybox.css", array(), $style_version, 'all'); 
+	
+		wp_enqueue_style("main-style", get_stylesheet_uri(), array(), ALL_VERSION, 'all' ); // Подключение основных стилей в самом конце
+
+		// Подключение скриптов
+		
+		wp_enqueue_script( 'jquery');
+
+		wp_enqueue_script( 'amodal', get_template_directory_uri().'/js/jquery.arcticmodal-0.3.min.js', array(), ALL_VERSION , true); //Модальные окна
+
+		wp_enqueue_script( 'voentorg-fancybox', get_template_directory_uri() . '/js/jquery.fancybox.min.js', array(), '1.0', true ); 
+
+		wp_enqueue_script( 'voentorg-inputmask', get_template_directory_uri() . '/js/jquery.inputmask.bundle.js', array(), 1.0, true );
+	
+		wp_enqueue_script( 'voentorg-slick', get_template_directory_uri() . '/js/slick.min.js', array(), '1.0', true ); 
+	
+		wp_enqueue_script( 'voentorg-main', get_template_directory_uri() . '/js/main.js', array(), 1.0, true );
+		
+		
+		wp_localize_script( 'main', 'allAjax', array(
+			'ajaxurl' => admin_url( 'admin-ajax.php' ),
+			'nonce'   => wp_create_nonce( 'NEHERTUTLAZIT' )
+		) );
+	}
 
 
 
