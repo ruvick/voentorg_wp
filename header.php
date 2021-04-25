@@ -7,12 +7,12 @@
   <meta name="description" content="Новый сайт">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/fancybox.css">
-  <link rel="icon" type="image/png" href="img/favicons/icon256.png" sizes="256x256">
-  <link rel="icon" type="image/png" href="img/favicons/icon128.png" sizes="128x128">
-  <link rel="icon" type="image/png" href="img/favicons/icon64.png" sizes="64x64">
-  <link rel="icon" type="image/png" href="img/favicons/icon32.png" sizes="32x32">
-  <link rel="icon" type="image/png" href="img/favicons/icon16.png" sizes="16x16">
-  <link rel="icon" type="image/png" href="img/favicons/icon.svg" sizes="any">
+  <link rel="icon" type="image/png" href="<?php echo get_template_directory_uri();?>/img/favicons/icon256.png" sizes="256x256">
+  <link rel="icon" type="image/png" href="<?php echo get_template_directory_uri();?>/img/favicons/icon128.png" sizes="128x128">
+  <link rel="icon" type="image/png" href="<?php echo get_template_directory_uri();?>/img/favicons/icon64.png" sizes="64x64">
+  <link rel="icon" type="image/png" href="<?php echo get_template_directory_uri();?>/img/favicons/icon32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="<?php echo get_template_directory_uri();?>/img/favicons/icon16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="<?php echo get_template_directory_uri();?>/img/favicons/icon.svg" sizes="any">
   <!-- Bootstrap добавил-->
   <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> -->
   <!-- <meta name="robots" content="noindex, nofollow"> -->
