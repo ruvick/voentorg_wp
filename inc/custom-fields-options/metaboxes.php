@@ -78,6 +78,10 @@ Container::make( 'theme_options', 'as_theme_options', 'Настройки тем
           ->set_width(50),
         Field::make('text', 'text_map', 'Текст метки карты')
           ->set_width(50),
+          Field::make('text', 'map_point_2', 'Координаты карты 2')
+          ->set_width(50),
+        Field::make('text', 'text_map_2', 'Текст метки карты 2')
+          ->set_width(50),
     ) );
     
 Container::make('post_meta', 'voen_product_cr', 'Характеристики товара')
