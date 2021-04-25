@@ -185,7 +185,51 @@ $(document).ready(function () {
 	});
 
 
+	$('.agriwind').click(function (e) {
 
+		e.preventDefault();
+		var namew = $("#form-namew").val();
+		var emailw = $("#form-emailw").val();
+		var telw = $("#form-telw").val();
+
+		// if (jQuery("#form-namew").val() == "") {
+		//     jQuery("#form-namew").css("border","1px solid red");
+		//     return;
+		// }
+
+		// if (jQuery("#form-emailw").val() == ""){
+		//     jQuery("#form-emailw").css("border","1px solid red");
+		//     return;
+		// }
+
+		if (jQuery("#form-telw").val() == "") {
+			jQuery("#form-telw").css("border", "1px solid red");
+			return;
+		}
+
+		else {
+			var jqXHR = jQuery.post(
+				allAjax.ajaxurl,
+				{
+					action: 'sendagri',
+					nonce: allAjax.nonce,
+					namew: namew,
+					emailw: emailw,
+					telw: telw,
+				}
+			);
+
+			jqXHR.done(function (responce) {
+				jQuery(".headen_form_blk").hide();
+				jQuery('.SendetMsg').show();
+			});
+
+			jqXHR.fail(function (responce) {
+				alert("Произошла ошибка. Попробуйте позднее.");
+			});
+
+		}
+	});
 
 
 
