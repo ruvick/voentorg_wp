@@ -10,15 +10,17 @@
 					<a href="http://tmp.1voentorg.ru" class="header__logo logo-icon"></a>
 
 					<div class="header__info d-flex"> 
-						<div class="menu__icon icon-menu">  
+						<div class="menu__icon icon-menu">   
 							<span></span>
 							<span></span>
 							<span></span> 
 						</div>
 
 						<div class="header__search search">
-							<input type="text" placeholder="Поиск по сайту" class="search__input input">
-							<button type="submit" tabindex="2" id="searchsubmit" class="sub-search" value=""></button>
+						<form role="search" method="get" id="searchform" class="search" action="<?php echo home_url( '/' ) ?>">
+							<input type="text" placeholder="Поиск по сайту" class="search__input input" value="<?php echo get_search_query() ?>" name="s" id="s">
+							<button type="submit" tabindex="2" id="searchsubmit" class="sub-search" value=""></button> 
+						</form>
 						</div>
 						<button class="mob-search"></button>
 
