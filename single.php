@@ -27,52 +27,51 @@ get_header(); ?>
 				<div class="select-prod-sl">
 					<!-- Большой слайдер -->
 					<div class="select-slider-big">
+					<?
+						$pict = carbon_get_the_post_meta('offer_picture');
+						if($pict) {
+							$pictIndex = 0;
+							foreach($pict as $item) {
+								?>
+								<div class="select-slider-big__item">
+									<a class="fancybox" data-fancybox="gallery" href="<?php echo wp_get_attachment_image_src($item['gal_img'], 'full')[0];?>">
+										<img
+										id = "pict-<? echo empty($item['gal_img_sku'])?$pictIndex:$item['gal_img_sku']; ?>" 
+										alt = "<? echo $item['gal_img_alt']; ?>"
+										title = "<? echo $item['gal_img_alt']; ?>"
+										src = "<?php echo wp_get_attachment_image_src($item['gal_img'], 'full')[0];?>" />
 
-						<div class="select-slider-big__item">
-							<a class="fancybox" data-fancybox="gallery" href="<?php echo get_template_directory_uri();?>/img/slider-product/sl-prod-01.jpg">
-								<img  src="<?php echo get_template_directory_uri();?>/img/slider-product/sl-prod-01.jpg" alt="">
-							</a>
-						</div>
+									</a>
+								</div>
 
-						<div class="select-slider-big__item">
-							<a class="fancybox" data-fancybox="gallery" href="<?php echo get_template_directory_uri();?>/img/slider-product/sl-prod-02.jpg">
-								<img  src="<?php echo get_template_directory_uri();?>/img/slider-product/sl-prod-02.jpg" alt="">
-							</a>
-						</div>
-
-						<div class="select-slider-big__item">
-							<a class="fancybox" data-fancybox="gallery" href="<?php echo get_template_directory_uri();?>/img/slider-product/sl-prod-03.jpg">
-								<img src="<?php echo get_template_directory_uri();?>/img/slider-product/sl-prod-03.jpg" alt="">
-							</a>
-						</div>
-
-						<div class="select-slider-big__item">
-							<a class="fancybox" data-fancybox="gallery" href="<?php echo get_template_directory_uri();?>/img/slider-product/sl-prod-04.jpg">
-								<img src="<?php echo get_template_directory_uri();?>/img/slider-product/sl-prod-04.jpg" alt="">
-							</a>
-						</div>
-
+								<?
+								$pictIndex++;
+							}
+						}
+						?>
 					</div>
 
 					<!-- Малый слайдер -->
 					<div class="select-prod-slider">
-
-						<div class="select-prod-slider__item">
-							<img src="<?php echo get_template_directory_uri();?>/img/slider-product/sl-prod-min-01.jpg" alt="">
-						</div>
-
-						<div class="select-prod-slider__item">
-							<img src="<?php echo get_template_directory_uri();?>/img/slider-product/sl-prod-min-02.jpg" alt="">
-						</div>
-
-						<div class="select-prod-slider__item">
-							<img src="<?php echo get_template_directory_uri();?>/img/slider-product/sl-prod-min-03.jpg" alt="">
-						</div>
-
-						<div class="select-prod-slider__item">
-							<img src="<?php echo get_template_directory_uri();?>/img/slider-product/sl-prod-min-04.jpg" alt="">
-						</div>
-
+					<?
+						$pict = carbon_get_the_post_meta('offer_picture');
+						if($pict) {
+							$pictIndex = 0;
+							foreach($pict as $item) {
+								?>
+								<div class="select-prod-slider__item">
+									<img 
+									data-indexelem = "<?echo $i;?>"
+									id = "<? echo $item['gal_img_sku']; ?>" 
+									alt = "<? echo $item['gal_img_alt']; ?>"
+									title = "<? echo $item['gal_img_alt']; ?>"
+									src = "<?php echo wp_get_attachment_image_src($item['gal_img'], 'large')[0];?>" />
+								</div>
+								<?
+								$pictIndex++;
+							}
+						}
+						?>
 					</div>
 				</div>
 
@@ -115,17 +114,7 @@ get_header(); ?>
 					</div>
 					<div class="actions-block__text">
 						<p>
-							Военная торговля — система торгово-бытового обеспечения 
-							военнослужащих,  также их семей. Российская система военной торговли 
-							носит официальное название Главное управление торговли Министерства 
-							обороны Российской Федерации, а в разговорной речи сокращенно 
-							называется военторг. 
-						</p>
-						<p>
-							Основными задачами военной торговли являются: торгово-бытовое 
-							обеспечен войск (сил) на полевых учениях, манёврах и в лагерях, а также 
-							в зонах конфликтов и чрезвычайных ситуаций; обеспечение товарами и 
-							услугами военнослужащих и членов их семей в отдаленных.
+							<?echo carbon_get_post_meta(get_the_ID(),"offer_smile_descr"); ?>
 						</p>
 					</div>
 				</div>
@@ -143,17 +132,7 @@ get_header(); ?>
 				<div class="card-description__item">
 					<h2>Описание</h2>
 					<p>
-						Военная торговля — система торгово-бытового обеспечения 
-						военнослужащих,  также их семей. Российская система военной торговли 
-						носит официальное название Главное управление торговли Министерства 
-						обороны Российской Федерации, а в разговорной речи сокращенно 
-						называется военторг. 
-					</p>
-					<p>
-						Основными задачами военной торговли являются: торгово-бытовое 
-						обеспечен войск (сил) на полевых учениях, манёврах и в лагерях, а также 
-						в зонах конфликтов и чрезвычайных ситуаций; обеспечение товарами и 
-						услугами военнослужащих и членов их семей в отдаленных.
+						<?echo carbon_get_post_meta(get_the_ID(),"offer_fulltext"); ?>
 					</p>
 				</div>
 
