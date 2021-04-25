@@ -1,12 +1,12 @@
 {
   "name": "voentorg",
   "version": "1.0.1",
-  "description": "Военторг", 
+  "description": "Военторг",
   "main": "index.php",
   "scripts": {
-    "test": "editorconfig-checker", 
+    "test": "editorconfig-checker",
     "clear_r": "ssh user1122@s18.webhost1.ru \"rm  /tmp.1voentorg.ru/html/wp-content/themes/voentorg/*.*\"",
-    "send_r": "scp -P 9999 -C *.php *.png *.css user1122@s18.webhost1.ru:tmp.1voentorg.ru/html/wp-content/themes/voentorg/", 
+    "send_r": "scp -P 9999 -C *.php *.png *.css user1122@s18.webhost1.ru:tmp.1voentorg.ru/html/wp-content/themes/voentorg/",
     "send_ms": "scp -P 9999 -C *.css user1122@s18.webhost1.ru:tmp.1voentorg.ru/html/wp-content/themes/voentorg/",
     "send_head": "scp -P 9999 -C header.php user1122@s18.webhost1.ru:tmp.1voentorg.ru/html/wp-content/themes/voentorg/",
     "send_func": "scp -P 9999 -C functions.php user1122@s18.webhost1.ru:tmp.1voentorg.ru/html/wp-content/themes/voentorg/",
@@ -31,7 +31,7 @@
     "send_fonts": "scp -P 9999 -C -r fonts user1122@s18.webhost1.ru:tmp.1voentorg.ru/html/wp-content/themes/voentorg/",
     "send_all": "npm run send_r & npm run send_css & npm run send_part & npm run send_img & npm run send_image & npm run send_js & npm run send_fonts"
   },
-  "repository": { 
+  "repository": {
     "type": "git",
     "url": "git+https://github.com/ruvick/voentorg_wp.git"
   },
