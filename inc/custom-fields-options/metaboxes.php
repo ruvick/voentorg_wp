@@ -130,6 +130,15 @@ Container::make('post_meta', 'voen_product_cr', 'Характеристики т
         Field::make('text', 'gal_img_alt', 'alt и title')->set_width(30)        
       ) ),
 
+      Field::make( "set", "crb_adv_side", "Размер" )
+			->add_options( array(
+				'option-39'     => 'Размер 39',
+				'option-40'     => 'Размер 40',
+				'option-41'     => 'Размер 41',
+        'option-42'     => 'Размер 42',
+        'option-43'     => 'Размер 43',
+			) ),
+
       Field::make('rich_text', 'offer_fulltext', 'Полное описание (SEO)')->set_width(50),
 
       Field::make( 'complex', 'offer_rev', "Отзывы о товаре" )
