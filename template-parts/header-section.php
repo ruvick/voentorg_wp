@@ -42,48 +42,7 @@
 				</div>
 				<nav class="mob-menu">
 					<div class="mob-menu__df d-flex">
-						<ul class="mob-menu__list">
-							<li><a href="#">Галантерея</a></li>
-							<li><a href="#">Головные уборы</a></li>
-							<li><a href="#">Кобуры, ремни и портупеи</a></li>
-							<li><a href="#">Маски</a></li>
-							<li><a href="#">Медали</a></li>
-							<li><a href="#">Новинки</a></li>
-							<li><a href="#">Обувь</a></li>
-						</ul>
-						<ul>
-							<li><a href="#">Одежда</a></li>
-							<li><a href="#">Печатная продукция</a></li>
-							<li><a href="#">Пневматическое оружие, сабли, шашки, ножи</a></li>
-							<li><a href="#">Погоны, шевроны, нашивки,курсовки</a></li>
-							<li><a href="#">Рюкзаки</a></li>
-							<li><a href="#">Снаряжение</a></li>
-						</ul>
-						<ul class="mob-menu__list">
-							<li><a href="#">Галантерея</a></li>
-							<li><a href="#">Головные уборы</a></li>
-							<li><a href="#">Кобуры, ремни и портупеи</a></li>
-							<li><a href="#">Маски</a></li>
-							<li><a href="#">Медали</a></li>
-							<li><a href="#">Новинки</a></li>
-							<li><a href="#">Обувь</a></li>
-						</ul>
-						<ul>
-							<li><a href="#">Одежда</a></li>
-							<li><a href="#">Печатная продукция</a></li>
-							<li><a href="#">Пневматическое оружие, сабли, шашки, ножи</a></li>
-							<li><a href="#">Погоны, шевроны, нашивки,курсовки</a></li>
-							<li><a href="#">Рюкзаки</a></li>
-							<li><a href="#">Снаряжение</a></li>
-						</ul>
-						<ul class="mob-menu__addit">
-							<li><a href="#">Помощь</a></li>
-							<li><a href="#">Оплата</a></li>
-							<li><a href="#">Доставка</a></li>
-							<li><a href="#">О компании</a></li>
-							<li><a href="#">Бренды</a></li>
-							<li><a href="#">Контакты</a></li> 
-						</ul>
+						<?php wp_nav_menu( array('theme_location' => 'menu_cat','menu_class' => 'mob-menu__list','container_class' => 'mob-menu__list','container' => false )); ?>
 					</div>
 				</nav>
 			</div>
