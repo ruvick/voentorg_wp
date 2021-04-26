@@ -79,9 +79,9 @@ get_header(); ?>
 					<div class="actions-block__availability">
 						<div class="availability-flex d-flex">
 							<div class="availability-icon active"></div>
-							<div class="availability-text">В наличии</div>
+							<div class="availability-text"><?echo carbon_get_post_meta(get_the_ID(),"offer_nal"); ?></div>
 						</div>
-						<div class="actions-block__price">79 000 руб.</div>
+						<div class="actions-block__price"><?echo carbon_get_post_meta(get_the_ID(),"offer_price"); ?> руб.</div>
 
 						<form class="actions-block__form form-block" action="#">
 							<div class="actions-block__form-item form-block__item">
