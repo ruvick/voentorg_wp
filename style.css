@@ -2175,13 +2175,22 @@ body.ie .ibg img {
   margin-bottom: 38px;
   font-weight: 400;
 }
+.contacts h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
 
 .contacts ul {
   margin-bottom: 35px;
 }
 
 .contacts ul li {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
+}
+.contacts ul li a,
+.contacts ul li p {
+  display: inline-block;
+  font-weight: 300;
 }
 
 .block__map {
@@ -2292,6 +2301,11 @@ body.ie .ibg img {
   border-radius: 5px;
   color: #fff;
 }
+
+
+
+
+
 
 
 

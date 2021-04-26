@@ -42,15 +42,39 @@ Container::make( 'theme_options', 'as_theme_options', 'Настройки тем
     ->add_tab('Контакты', array(
         Field::make( 'text', 'as_company', __( 'Название' ) )
           ->set_width(50),
-        // Field::make( 'text', 'as_schedule', __( 'Режим работы' ) )
-        //   ->set_width(50),
-        Field::make( 'text', 'as_phones_1', __( 'Телефон' ) )
+        Field::make( 'text', 'as_schedule', __( 'Режим работы' ) )
           ->set_width(50),
-        Field::make( 'text', 'as_phone_2', __( 'Телефон дополнительный' ) )
+        Field::make( 'text', 'as_phones_header', __( 'Телефон в шапке' ) )
           ->set_width(50),
-        Field::make( 'text', 'as_email', __( 'Email' ) )
+        Field::make( 'text', 'as_phones_footer', __( 'Телефон в подвале' ) )
+          ->set_width(50),
+        Field::make( 'text', 'as_address', __( 'Адрес магазина 1' ) )
+          ->set_width(50),
+        Field::make( 'text', 'as_address_2', __( 'Адрес магазина 2' ) )
+          ->set_width(50),
+        Field::make( 'text', 'as_address_3', __( 'Адрес магазина 3' ) )
+          ->set_width(50),
+        Field::make( 'text', 'as_address_4', __( 'Адрес магазина 4' ) )
+          ->set_width(50),
+        Field::make( 'text', 'as_phones_1', __( 'Телефон магазина 1' ) )
+          ->set_width(50),
+        Field::make( 'text', 'as_phone_2', __( 'Телефон магазина 2' ) )
+          ->set_width(50),
+        Field::make( 'text', 'as_phone_3', __( 'Телефон магазина 3' ) )
+          ->set_width(50),
+        Field::make( 'text', 'as_phone_4', __( 'Телефон магазина 4' ) )
+          ->set_width(50),
+        Field::make( 'text', 'as_email', __( 'Email магазина 1' ) )
+          ->set_width(50),
+        Field::make( 'text', 'as_email_2', __( 'Email магазина 2' ) )
+          ->set_width(50),
+        Field::make( 'text', 'as_email_3', __( 'Email магазина 3' ) )
+          ->set_width(50),
+        Field::make( 'text', 'as_email_4', __( 'Email магазина 4' ) )
           ->set_width(50),
         Field::make( 'text', 'as_email_send', __( 'Email для отправки' ) )
+          ->set_width(50),
+        Field::make( 'text', 'as_vk', __( 'Вконтакте' ) )
           ->set_width(50),
         Field::make( 'text', 'as_inn', __( 'ИНН' ) )
           ->set_width(50),
@@ -58,8 +82,8 @@ Container::make( 'theme_options', 'as_theme_options', 'Настройки тем
           ->set_width(50),
         Field::make( 'text', 'as_kpp', __( 'КПП' ) )
           ->set_width(50),
-        Field::make( 'text', 'as_address', __( 'Адрес' ) )
-          ->set_width(50),
+        // Field::make( 'text', 'as_address', __( 'Адрес' ) )
+        //   ->set_width(50),
         Field::make( 'text', 'as_bik', __( 'БИК' ) )
           ->set_width(50),
         Field::make( 'text', 'as_rs', __( 'Р/С' ) )
@@ -81,6 +105,10 @@ Container::make( 'theme_options', 'as_theme_options', 'Настройки тем
           Field::make('text', 'map_point_2', 'Координаты карты 2')
           ->set_width(50),
         Field::make('text', 'text_map_2', 'Текст метки карты 2')
+          ->set_width(50),
+        Field::make('text', 'map_point_3', 'Координаты карты 3')
+          ->set_width(50),
+        Field::make('text', 'text_map_3', 'Текст метки карты 3')
           ->set_width(50),
     ) );
     

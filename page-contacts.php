@@ -23,17 +23,30 @@
 		</div>
 			<h1><?php the_title();?></h1>
 
+      <h2>Наши магазины:</h2>
+
 			<ul>
-				<li>Организация: <? echo carbon_get_theme_option("as_company"); ?></li>
-				<li>Адрес: <? echo carbon_get_theme_option("as_address"); ?></li>
-				<li>ИНН: <? echo carbon_get_theme_option("as_inn"); ?></li>
-				<li>КПП: <? echo carbon_get_theme_option("as_kpp"); ?></li>
-				<li>ОРГН: <? echo carbon_get_theme_option("as_orgn"); ?></li>
-				<li>Р/С: <? echo carbon_get_theme_option("as_rs"); ?></li>
-				<li>К/С: <? echo carbon_get_theme_option("as_ks"); ?></li>
-				<li>БИК: <? echo carbon_get_theme_option("as_bik"); ?></li>
+				<li>Адрес магазина: <p><? echo carbon_get_theme_option("as_address"); ?></p></li>
+				<li>Тел.магазина: <a href="tel:<? echo preg_replace('/[^0-9]/', '', $tel); ?>"><? echo $tel = carbon_get_theme_option("as_phones_1"); ?></a></li>
 				<li>Email: <a href="mailto:<? echo $mail = carbon_get_theme_option("as_email"); ?>"><? echo $mail; ?></a></li>
-				<li>Тел: <a href="tel:<? echo preg_replace('/[^0-9]/', '', $tel); ?>"><? echo $tel = carbon_get_theme_option("as_phones_1"); ?></a></li>
+				<li>Соц.сети: <a href="<? echo carbon_get_theme_option("text', 'as_vk"); ?>"></a></li>
+			</ul>
+
+			<ul>
+				<li>Адрес магазина: <p><? echo carbon_get_theme_option("as_address_2"); ?></p></li>
+				<li>Тел.магазина: <a href="tel:<? echo preg_replace('/[^0-9]/', '', $tel); ?>"><? echo $tel = carbon_get_theme_option("as_phone_2"); ?></a></li>
+				<li>Email: <a href="mailto:<? echo $mail = carbon_get_theme_option("as_email_2"); ?>"><? echo $mail; ?></a></li>
+			</ul>
+
+			<ul>
+				<li>Адрес магазина: <p><? echo carbon_get_theme_option("as_address_3"); ?></p></li>
+				<li>Тел.магазина: <a href="tel:<? echo preg_replace('/[^0-9]/', '', $tel); ?>"><? echo $tel = carbon_get_theme_option("as_phone_3"); ?></a></li>
+			</ul>
+
+			<ul>
+				<li>Адрес магазина: <p><? echo carbon_get_theme_option("as_address_4"); ?></p></li>
+				<li>Тел.магазина: <a href="tel:<? echo preg_replace('/[^0-9]/', '', $tel); ?>"><? echo $tel = carbon_get_theme_option("as_phone_4"); ?></a></li>
+				<li>Режим работы: <p><? echo carbon_get_theme_option("as_schedule"); ?></p></li>
 			</ul>
 
 		</div>
@@ -74,6 +87,20 @@
                                 // Свойства. 
                                 // hintContent: '<div class="map-hint">Авто профи , Курск, ул.Гунатовская, 32</div>',
                                 balloonContent: '<?php echo carbon_get_theme_option('text_map_2') ?>',
+                            },{
+                                // Необходимо указать данный тип макета.
+                                iconLayout: 'default#image',
+                                iconImageHref: '<?php bloginfo("template_url"); ?>/img/icons/map.png',
+                                // Размеры метки.
+																iconImageSize: [23, 34],
+                    						// Смещение верхнего угла относительно основания иконки
+                    						iconImageOffset: [-5, -40]
+                            }); 
+                            
+    myGeoObjects[2] = new ymaps.Placemark([<?php echo carbon_get_theme_option('map_point_3') ?>],{
+                                // Свойства. 
+                                // hintContent: '<div class="map-hint">Авто профи , Курск, ул.Гунатовская, 32</div>',
+                                balloonContent: '<?php echo carbon_get_theme_option('text_map_3') ?>',
                             },{
                                 // Необходимо указать данный тип макета.
                                 iconLayout: 'default#image',

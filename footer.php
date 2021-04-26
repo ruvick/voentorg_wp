@@ -22,7 +22,7 @@
             <li><? echo carbon_get_theme_option("footer_text_2"); ?></li>
           </ul>
           <div class="header__callback callback d-flex">
-            <p><a href="tel:<? echo preg_replace('/[^0-9]/', '', $tel); ?>" class="callback__phone"><? echo $tel = carbon_get_theme_option("as_phones_1"); ?></a></p>
+            <p><a href="tel:<? echo preg_replace('/[^0-9]/', '', $tel); ?>" class="callback__phone"><? echo $tel = carbon_get_theme_option("as_phones_footer"); ?></a></p>
             <a href="#" class="callback__popup">ЗАКАЗАТЬ ЗВОНОК</a>
           </div>
         </div>

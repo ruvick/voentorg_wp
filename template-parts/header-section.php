@@ -25,7 +25,7 @@
 						<button class="mob-search"></button>
 
 						<div class="header__callback callback d-flex">
-							<p><a href="tel:<? echo preg_replace('/[^0-9]/', '', $tel); ?>" class="callback__phone"><? echo $tel = carbon_get_theme_option("as_phones_1"); ?></a></p>
+							<p><a href="tel:<? echo preg_replace('/[^0-9]/', '', $tel); ?>" class="callback__phone"><? echo $tel = carbon_get_theme_option("as_phones_header"); ?></a></p>
 							<a href="#" class="callback__popup">ЗАКАЗАТЬ ЗВОНОК</a>
 						</div>
 						<a href="tel:<? echo preg_replace('/[^0-9]/', '', $tel); ?>" class="mob-callback__phone"></a>
