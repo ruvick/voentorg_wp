@@ -104,7 +104,12 @@ get_header(); ?>
 								?>
 								</div>
 							</div>
-							<button class="btn">Добавить в корзину</button>
+							<button class="btn btn__to-card" onclick="add_tocart(this, 0); return false;" data-price="2550" 
+								data-sku1c="9741b7ad-a35a-11eb-bc32-00e01e6811f0" data-sku="11610" data-oldprice="" 
+								data-lnk="https://agribest.ru/agriproduct/okuchnik-ruchnoj-or-300-fenoma/" data-name="Окучник ручной ОР-300 Фенома" data-count="1" 
+								data-picture="https://agribest.ru/wp-content/uploads/2021/04/9741b7ada35a11ebbc3200e01e6811f0_bfb7e8b5a36511ebbc3200e01e6811f0.jpg">
+								Добавить в корзину
+							</button>
 						</form>
 					</div>
 					<div class="actions-block__text">

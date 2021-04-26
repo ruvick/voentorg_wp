@@ -25,7 +25,7 @@ register_nav_menus(
 	array(
 		'menu_corp' => 'Общекорпоративное меню (верхняя шапка)', 
 		'menu_main' => 'Меню основное',
-		'menu_cat' => 'Меню каталога', 
+		'menu_cat' => 'Меню каталога',  
 	)
 );
 
@@ -101,10 +101,16 @@ add_action( 'wp_enqueue_scripts', 'my_assets' );
 
 		wp_enqueue_script( 'main', get_template_directory_uri().'/js/main.js', array(), $scrypt_version , true); // Подключение основного скрипта в самом конце
 		
+		if ( is_page(164))
+		{
+			wp_enqueue_script( 'vue', get_template_directory_uri().'/js/vue.js', array(), ALL_VERSION , true);
+			wp_enqueue_script( 'axios', get_template_directory_uri().'/js/axios.min.js', array(), ALL_VERSION , true);
+			wp_enqueue_script( 'bascet', get_template_directory_uri().'/js/bascet.js', array(), ALL_VERSION , true);
+		}
 		
 		wp_localize_script( 'main', 'allAjax', array(
 			'ajaxurl' => admin_url( 'admin-ajax.php' ),
-			'nonce'   => wp_create_nonce( 'NEHERTUTLAZIT' )
+			'nonce'   => wp_create_nonce( 'NEHERTUTLAZIT' ) 
 		) );
 	}
 

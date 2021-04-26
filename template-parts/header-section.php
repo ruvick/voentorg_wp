@@ -31,10 +31,10 @@
 						<a href="tel:<? echo preg_replace('/[^0-9]/', '', $tel); ?>" class="mob-callback__phone"></a>
 
 						<div class="header__bascket-block d-flex">
-							<a href="#" class="header__bascket">Корзина</a>
+							<a href="<?php echo get_permalink(164);?>" class="header__bascket">Корзина</a>
 							<div class="header__bascket-icon d-flex">
-								<a href="#" class="bascket-icon-1 d-flex"></a>
-								<div class="bascket-icon-2 d-flex">99+</div>
+								<a href="<?php echo get_permalink(164);?>" class="bascket-icon-1 d-flex"></a> 
+								<div class="bascket-icon-2 bascet_counter d-flex">0</div>
 							</div>
 						</div>
 					</div>
