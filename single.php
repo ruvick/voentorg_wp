@@ -134,55 +134,26 @@ get_header(); ?>
 				<div class="card-description__item">
 					<h2>Характеристики</h2>
 
-					<div class="tech-text__block d-flex">
-						<div class="tech-text__item tech-text__item_left">
-							Ведомство	 
+					<?
+						$cherect = carbon_get_the_post_meta('offer_cherecter');
+							if($cherect) {
+						$cherectIndex = 0;
+							foreach($cherect as $cher) { 
+						?>
+						<div class="tech-text__block d-flex">
+							<div class="tech-text__item tech-text__item_left">
+								<? echo $cher['c_name']; ?>
+							</div>
+							<div class="tech-text__line"></div>
+							<div class="tech-text__item">
+								<? echo $cher['c_val']; ?>
+							</div>
 						</div>
-						<div class="tech-text__line"></div>
-						<div class="tech-text__item">
-							Обувь - Ботинки с высоким берцем
-						</div>
-					</div>
-
-					<div class="tech-text__block d-flex tgrey">
-						<div class="tech-text__item tech-text__item_left">
-							Тип товара
-						</div>
-						<div class="tech-text__line"></div>
-						<div class="tech-text__item tech-text__item_cold">
-							Ботинки
-						</div>
-					</div>
-
-					<div class="tech-text__block d-flex">
-						<div class="tech-text__item tech-text__item_left">
-							Цвет
-						</div>
-						<div class="tech-text__line"></div>
-						<div class="tech-text__item tech-text__item_cold">
-							Черный
-						</div>
-					</div>
-
-					<div class="tech-text__block d-flex tgrey">
-						<div class="tech-text__item tech-text__item_left">
-							Материал
-						</div>
-						<div class="tech-text__line"></div>
-						<div class="tech-text__item">
-							Кожа (натуральная)
-						</div>
-					</div>
-
-					<div class="tech-text__block d-flex">
-						<div class="tech-text__item tech-text__item_left">
-							Артикул товара
-						</div>
-						<div class="tech-text__line"></div>
-						<div class="tech-text__item tech-text__item_cold">
-							УТ000003690
-						</div>
-
+						<?
+							$cherectIndex++;
+							}
+						}
+					?>
 					</div>
 
 				</div>
