@@ -2769,6 +2769,16 @@ body.ie .ibg img {
   .actions-block__text p {
     text-align: justify;
   }
+  .box-modal {
+    padding: 80px 15px 25px 15px;
+  }
+  .box-modal__img {
+    max-width: 120px;
+    width: 100%;
+  }
+  .box-modal button {
+    width: 100%;
+  }
 }
 
 @media (max-width: 414px) {
