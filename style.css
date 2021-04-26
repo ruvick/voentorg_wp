@@ -2310,7 +2310,7 @@ body.ie .ibg img {
   border-radius: 5px;
   color: #fff;
 }
-
+ 
 
 
 
@@ -2577,7 +2577,27 @@ body.ie .ibg img {
     right: -100%;
     -webkit-transition: right 0.8s;
     -o-transition: right 0.8s;
-    transition: right 0.8s; } }
+    transition: right 0.8s; } 
+  .header__search.active {
+      display: block;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      max-width: 100%;
+      -webkit-transition: top 0.8s;
+      -o-transition: top 0.8s;
+      transition: top 0.8s;
+      -webkit-box-shadow: 0px 2px 2px 0px rgb(0 0 0 / 30%);
+      box-shadow: 0px 2px 2px 0px rgb(0 0 0 / 30%);
+      margin: 0;
+  }
+  .search__input {
+    border-radius: 0px !important;
+    border: none !important;
+    border-bottom: 2px solid #EAEAEA !important;
+    background: #f5f5f5;
+  }
+}
 
 @media (max-width: 640px) {
   .info-sl__discounts {
@@ -2821,6 +2841,9 @@ body.ie .ibg img {
   }
   .contacts {
     padding-bottom: 0;
+  }
+  .header__search.active {
+    top: 55px;
   }
 }
 
