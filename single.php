@@ -87,48 +87,21 @@ get_header(); ?>
 							<div class="actions-block__form-item form-block__item">
 								<p>Размер</p>
 								<div class="actions-block__options options d-flex">
-							<?php	$crb_adv_side = carbon_get_the_post_meta('crb_adv_side');
-
-								if( in_array('option-39', $crb_adv_side) ){
-								// Это событие не произойдет, так как мы в примере не выбрали флажок 'Перед контентом'
-										echo '<div class="option active">39<input type="radio" value="1" name="form[type]"></div>';
+								<?
+									$size_chart = carbon_get_the_post_meta('size_chart_complex');
+										if($size_chart) {
+									$size_chartIndex = 0;
+									foreach($size_chart as $chart) { 
+								?>
+									<div class="option">
+										<? echo $chart['size_chart']; ?>
+									<input type="radio" value="1" name="form[type]">
+									</div>
+								<?
+									$size_chartIndex++;
+										}
 									}
-
-								if( in_array('option-40', $crb_adv_side) ){
-										echo '<div class="option">40<input type="radio" value="2" name="form[type]"></div>';
-									}
-
-								if( in_array('option-41', $crb_adv_side) ){
-										echo '<div class="option">41<input type="radio" value="3" name="form[type]"></div>';
-									} 
-
-								if( in_array('option-42', $crb_adv_side) ){
-										echo '<div class="option">42<input type="radio" value="4" name="form[type]"></div>';
-									} 
-								if( in_array('option-43', $crb_adv_side) ){
-										echo '<div class="option">43<input type="radio" value="5" name="form[type]"></div>';
-									} 
-							?>
-									<!-- <div class="option active">
-										39
-										<input type="radio" value="1" name="form[type]">
-									</div> -->
-									<!-- <div class="option">
-										40
-										<input type="radio" value="2" name="form[type]">
-									</div> -->
-									<!-- <div class="option">
-										41
-										<input type="radio" value="3" name="form[type]">
-									</div> -->
-									<!-- <div class="option">
-										42
-										<input type="radio" value="4" name="form[type]">
-									</div> -->
-									<!-- <div class="option">
-										43
-										<input type="radio" value="5" name="form[type]">
-									</div> -->
+								?>
 								</div>
 							</div>
 							<button class="btn">Добавить в корзину</button>

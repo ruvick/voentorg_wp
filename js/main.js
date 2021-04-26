@@ -231,7 +231,8 @@ $(document).ready(function () {
 		}
 	});
 
-
+	// Добавляем класс active к первому option - размерный ряд в карточке
+	$('.option').first().addClass('active');
 
 
 });

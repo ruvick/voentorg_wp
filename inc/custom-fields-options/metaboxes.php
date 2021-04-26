@@ -100,7 +100,7 @@ Container::make( 'theme_options', 'as_theme_options', 'Настройки тем
         //   ->set_width(50),
         Field::make('text', 'map_point', 'Координаты карты')
           ->set_width(50),
-        Field::make('text', 'text_map', 'Текст метки карты')
+        Field::make('text', 'text_map', 'Текст метки карты') 
           ->set_width(50),
           Field::make('text', 'map_point_2', 'Координаты карты 2')
           ->set_width(50),
@@ -116,40 +116,46 @@ Container::make('post_meta', 'voen_product_cr', 'Характеристики т
     ->show_on_post_type(array( 'voen'))
       ->add_fields(array(   
       Field::make('textarea', 'offer_smile_descr', 'Краткое описание')->set_width(100),
-      Field::make('text', 'offer_name', 'Название товара')->set_width(30),
-      Field::make('text', 'offer_label', 'Метка на товаре')->set_width(30),
-      Field::make('text', 'offer_manufact', 'Производитель')->set_width(50),
-      Field::make('text', 'offer_allsearch', 'Все артикулы для поиска')->set_width(50),
-      Field::make('text', 'offer_siries', 'Серия (для сопутствующих)')->set_width(30),
-      Field::make('select', 'offer_type', 'Тип светильника')->add_options( array(
-        '0' => 'Не задано',
-        'Светодиодный (LED)' => 'Светодиодный (LED)',
-        'Цокольный (Со сменными лампами)' => 'Цокольный (Со сменными лампами)'
-      ) )->set_width(100),
+      // Field::make('text', 'offer_name', 'Название товара')->set_width(30),
+      // Field::make('text', 'offer_label', 'Метка на товаре')->set_width(30),
+      // Field::make('text', 'offer_manufact', 'Производитель')->set_width(50),
+      // Field::make('text', 'offer_allsearch', 'Все артикулы для поиска')->set_width(50),
+      // Field::make('text', 'offer_siries', 'Серия (для сопутствующих)')->set_width(30),
+      // Field::make('select', 'offer_type', 'Тип светильника')->add_options( array(
+      //   '0' => 'Не задано',
+      //   'Светодиодный (LED)' => 'Светодиодный (LED)',
+      //   'Цокольный (Со сменными лампами)' => 'Цокольный (Со сменными лампами)'
+      // ) )->set_width(100),
 
-      Field::make('text', 'offer_sku', 'Артикул (Базовый)')->set_width(50),
+      // Field::make('text', 'offer_sku', 'Артикул (Базовый)')->set_width(50),
       Field::make('text', 'offer_nal', 'Наличие на складе')->set_default_value( 'В наличии')->set_width(50), 
 
-      Field::make('text', 'offer_sticker', 'Стикер')->set_width(50),
+      // Field::make('text', 'offer_sticker', 'Стикер')->set_width(50),
       Field::make('text', 'offer_benefit', 'Выгода')->set_width(50),
-      
+
+      Field::make('text', 'offer_price', 'Цена (Базовая)')->set_width(50),
+      Field::make('text', 'offer_old_price', 'Старая цена (Базовая)')->set_width(50),
+
+      Field::make('complex', 'size_chart_complex', 'Размерная сетка')
+        ->add_fields(array(
+          Field::make('text', 'size_chart', 'Размер')
+            ->set_width(50),
+      )),
+
       Field::make( 'complex', 'offer_cherecter', "Характеристики товара" )
       ->add_fields( array(
         Field::make( 'text', 'c_name', 'Наименование параметра' )->set_width(50),
         Field::make( 'text', 'c_val',  'Значение' )->set_width(50),
       ) ),
-
-      Field::make('text', 'offer_price', 'Цена (Базовая)')->set_width(50),
-      Field::make('text', 'offer_old_price', 'Старая цена (Базовая)')->set_width(50),
       
-      Field::make( 'complex', 'offer_modification', "Модификация товара" )
-      ->add_fields( array(
-        Field::make('text', 'mod_name', 'Наименование модификации' )->set_width(20),
-        Field::make('text', 'mod_sku', 'Артикул модификации')->set_width(20),
-        Field::make('text', 'mod_price', 'Цена модификации')->set_width(20),
-        Field::make('text', 'mod_old_price', 'Старая цена модификации')->set_width(20),
-        Field::make('text', 'mod_picture_id', 'Изображения модификации')->set_width(20),
-      ) ),
+      // Field::make( 'complex', 'offer_modification', "Модификация товара" )
+      // ->add_fields( array(
+      //   Field::make('text', 'mod_name', 'Наименование модификации' )->set_width(20),
+      //   Field::make('text', 'mod_sku', 'Артикул модификации')->set_width(20),
+      //   Field::make('text', 'mod_price', 'Цена модификации')->set_width(20),
+      //   Field::make('text', 'mod_old_price', 'Старая цена модификации')->set_width(20),
+      //   Field::make('text', 'mod_picture_id', 'Изображения модификации')->set_width(20),
+      // ) ),
         
       Field::make( 'complex', 'offer_picture', "Галерея товара" )
       ->add_fields( array(
@@ -158,32 +164,23 @@ Container::make('post_meta', 'voen_product_cr', 'Характеристики т
         Field::make('text', 'gal_img_alt', 'alt и title')->set_width(30)        
       ) ),
 
-      Field::make( "set", "crb_adv_side", "Размер" )
-			->add_options( array(
-				'option-39'     => 'Размер 39',
-				'option-40'     => 'Размер 40',
-				'option-41'     => 'Размер 41',
-        'option-42'     => 'Размер 42',
-        'option-43'     => 'Размер 43',
-			) ),
+      Field::make('rich_text', 'offer_fulltext', 'Полное описание (SEO)')->set_width(100),
 
-      Field::make('rich_text', 'offer_fulltext', 'Полное описание (SEO)')->set_width(50),
-
-      Field::make( 'complex', 'offer_rev', "Отзывы о товаре" )
-      ->add_fields( array(
-        Field::make('text', 'rev_name', 'Имя' )->set_width(20),
-        Field::make('text', 'rev_mail', 'e-mail' )->set_width(20),
-        Field::make('date', 'rev_date', 'Дата отзыва' )->set_width(20),
-        Field::make('select', 'rev_reiting', 'Оценка' )->add_options( array(
-          '1' => '1',
-          '2' => '2',
-          '3' => '3',
-          '4' => '4',
-          '5' => '5'
-        ) )->set_width(20),
-        Field::make('rich_text', 'rev_text', 'Текст отзыва')->set_width(100),
-        Field::make('rich_text', 'rev_otv', 'Ответ')->set_width(100)        
-      ) ),
+      // Field::make( 'complex', 'offer_rev', "Отзывы о товаре" )
+      // ->add_fields( array(
+      //   Field::make('text', 'rev_name', 'Имя' )->set_width(20),
+      //   Field::make('text', 'rev_mail', 'e-mail' )->set_width(20),
+      //   Field::make('date', 'rev_date', 'Дата отзыва' )->set_width(20),
+      //   Field::make('select', 'rev_reiting', 'Оценка' )->add_options( array(
+      //     '1' => '1',
+      //     '2' => '2',
+      //     '3' => '3',
+      //     '4' => '4',
+      //     '5' => '5'
+      //   ) )->set_width(20),
+      //   Field::make('rich_text', 'rev_text', 'Текст отзыва')->set_width(100),
+      //   Field::make('rich_text', 'rev_otv', 'Ответ')->set_width(100)        
+      // ) ),
       
       
       
