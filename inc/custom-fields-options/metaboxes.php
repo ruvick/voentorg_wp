@@ -116,7 +116,7 @@ Container::make('post_meta', 'voen_product_cr', 'Характеристики т
     ->show_on_post_type(array( 'voen'))
       ->add_fields(array(   
       Field::make('textarea', 'offer_smile_descr', 'Краткое описание')->set_width(100),
-      // Field::make('text', 'offer_name', 'Название товара')->set_width(30),
+      Field::make('text', 'offer_name', 'Название товара')->set_width(100),
       // Field::make('text', 'offer_label', 'Метка на товаре')->set_width(30),
       // Field::make('text', 'offer_manufact', 'Производитель')->set_width(50),
       // Field::make('text', 'offer_allsearch', 'Все артикулы для поиска')->set_width(50),
