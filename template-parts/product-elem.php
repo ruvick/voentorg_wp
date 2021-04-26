@@ -23,7 +23,7 @@
 	</a>
 
 	<div class="prod-card__button d-flex">
-		<a href="#" class="prod-card__baskcet d-flex">В корзину</a>
+		<!-- <a href="#" class="prod-card__baskcet d-flex">В корзину</a> -->
 		<a href="<?echo get_the_permalink(get_the_ID());?>" class="prod-card__order d-flex">Подробнее</a>
 	</div>
 </div>

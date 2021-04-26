@@ -1250,7 +1250,8 @@ body.ie .ibg img {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    background: #F5E11E;
+    /* background: #F5E11E; */
+    background: #65B965;
     font-size: 14px; }
 
 .prod-card-double {
