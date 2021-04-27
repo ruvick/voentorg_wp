@@ -2475,6 +2475,30 @@ input[type="checkbox"],
   display: inline-block;
 }
 
+.bascet-form__textarea,
+.bascet-form__input {
+  width: 100%;
+  height: 45px;
+  padding: 0px 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  min-width: 0 !important;
+  border: 1px solid #1dc17b;
+  display: inline-block;
+}
+.bascet-form__textarea {
+  height: 100%;
+  margin: 0;
+}
+
+.bascet-form__btn {
+  width: 180px;
+  height: 40px;
+  background: #65B965;
+  border-radius: 5px;
+  color: #fff;
+}
+
 /* Оформление корзины */
 
 
