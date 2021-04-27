@@ -46,8 +46,7 @@ get_header(); ?>
                             <td> <img :src = "item.picture" /> </td>
                             <td class = "name">
                                 <div class = "b_tov_name">{{item.name}}</div>
-                                <div class = "b_tov_sku1c">{{item.sku1c}} {{item.modtext}}</div>
-                                <div class = "b_tov_sku">{{item.sku}} {{item.modtext}}</div>
+                                <div class = "b_tov_sku">Артикул: {{item.sku}} Размер: {{item.size}}</div>
                             </td>
                             <td>
                                 <input type = "number"  @change = "recalcBascet" v-model="item.count" min = "0" />
