@@ -127,7 +127,7 @@ Container::make('post_meta', 'voen_product_cr', 'Характеристики т
       //   'Цокольный (Со сменными лампами)' => 'Цокольный (Со сменными лампами)'
       // ) )->set_width(100),
 
-      // Field::make('text', 'offer_sku', 'Артикул (Базовый)')->set_width(50),
+      Field::make('text', 'offer_sku', 'Артикул (Базовый)')->set_width(50),
       Field::make('text', 'offer_nal', 'Наличие на складе')->set_default_value( 'В наличии')->set_width(50), 
 
       // Field::make('text', 'offer_sticker', 'Стикер')->set_width(50),
@@ -148,7 +148,7 @@ Container::make('post_meta', 'voen_product_cr', 'Характеристики т
         Field::make( 'text', 'c_val',  'Значение' )->set_width(50),
       ) ),
       
-      // Field::make( 'complex', 'offer_modification', "Модификация товара" )
+      // Field::make( 'complex', 'offer_modification', "Модификация товара" ) 
       // ->add_fields( array(
       //   Field::make('text', 'mod_name', 'Наименование модификации' )->set_width(20),
       //   Field::make('text', 'mod_sku', 'Артикул модификации')->set_width(20),

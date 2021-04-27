@@ -6,6 +6,7 @@
 
 	<a href="<?echo get_the_permalink(get_the_ID());?>" class="prod-card__text d-flex">
 		<h4><?echo carbon_get_post_meta(get_the_ID(),"offer_name"); ?></h4>
+		<span class="spacer__vendor">Артикул: <? echo carbon_get_post_meta(get_the_ID(),"offer_sku"); ?></span>
 		<div class="prod-card__price d-flex">
 			<?php
 				$price_old = carbon_get_post_meta(get_the_ID(),"offer_old_price");

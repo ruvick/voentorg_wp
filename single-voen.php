@@ -82,6 +82,7 @@ get_header(); ?>
 							<div class="availability-text"><?echo carbon_get_post_meta(get_the_ID(),"offer_nal"); ?></div>
 						</div>
 						<div class="actions-block__price"><?echo carbon_get_post_meta(get_the_ID(),"offer_price"); ?> руб.</div>
+						<span class="spacer__vendor">Артикул: <? echo carbon_get_post_meta(get_the_ID(),"offer_sku"); ?></span>
 
 						<form class="actions-block__form form-block" action="#">
 							<div class="actions-block__form-item form-block__item">
@@ -104,12 +105,17 @@ get_header(); ?>
 								?>
 								</div>
 							</div>
-							<button class="btn btn__to-card" onclick="add_tocart(this, 0); return false;" data-price="2550" 
-								data-sku1c="9741b7ad-a35a-11eb-bc32-00e01e6811f0" data-sku="11610" data-oldprice="" 
-								data-lnk="https://agribest.ru/agriproduct/okuchnik-ruchnoj-or-300-fenoma/" data-name="Окучник ручной ОР-300 Фенома" data-count="1" 
-								data-picture="https://agribest.ru/wp-content/uploads/2021/04/9741b7ada35a11ebbc3200e01e6811f0_bfb7e8b5a36511ebbc3200e01e6811f0.jpg">
-								Добавить в корзину
-							</button>
+							<button class="btn btn__to-card" onclick = "add_tocart(this, 0); return false;"
+                data-price = "<?echo carbon_get_post_meta(get_the_ID(),"offer_price"); ?>"
+								data-sku1c = "<? echo carbon_get_post_meta(get_the_ID(),"offer_sku")?>"
+								data-sku = "<? echo $chart['size_chart']; ?>"
+                data-oldprice = "<? echo carbon_get_post_meta(get_the_ID(),"offer_old_price")?>"
+                data-lnk = "<? echo  get_the_permalink(get_the_ID());?>"
+                data-name = "<? echo  get_the_title();?>"
+                data-count = "1"
+                data-picture = "<?php echo wp_get_attachment_image_src($item['gal_img'], 'large')[0];?>"  
+            >Добавить в корзину
+						</button> 
 						</form>
 					</div>
 					<div class="actions-block__text">
