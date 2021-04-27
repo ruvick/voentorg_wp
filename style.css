@@ -2169,9 +2169,10 @@ body.ie .ibg img {
   -ms-flex-align: center;
   align-items: center;
   font-size: 18px;
-  width: 34px;
+  /* width: 34px; */
+  width: 75px;
   height: 34px;
-  border-radius: 50%; }
+  border-radius: 16px; }
 
 .actions-block__options .option.active {
   background: #F5E11E; }
@@ -3008,7 +3009,7 @@ input[type="checkbox"],
   .bascet-form__btn {
     width: 100%;
   }
-  
+
 }
 
 @media (max-width: 390px) {
