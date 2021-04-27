@@ -82,7 +82,7 @@ get_header(); ?>
 							<div class="availability-text"><?echo carbon_get_post_meta(get_the_ID(),"offer_nal"); ?></div>
 						</div>
 						<div class="actions-block__price"><?echo carbon_get_post_meta(get_the_ID(),"offer_price"); ?> руб.</div>
-						<span class="spacer__vendor">Артикул: <? echo carbon_get_post_meta(get_the_ID(),"offer_sku"); ?></span>
+						<div class="spacer__vendor">Артикул: <span><? echo carbon_get_post_meta(get_the_ID(),"offer_sku"); ?></span></div>
 
 						<form class="actions-block__form form-block" action="#">
 							<div class="actions-block__form-item form-block__item">

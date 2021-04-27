@@ -1213,6 +1213,8 @@ body.ie .ibg img {
       flex: 1 1 auto; }
       .prod-card__text .spacer__vendor {
       text-align: center;
+      font-size: 11px;
+      color: #858484;
       margin-bottom: 10px;
     }
   .prod-card__price {
@@ -2123,9 +2125,11 @@ body.ie .ibg img {
   font-weight: 500;
   margin-bottom: 10px; }
 .spacer__vendor {
-  display: block;
   margin-bottom: 28px;
   }
+  .spacer__vendor span {
+  color: #858484;
+}
 
 .actions-block__text p {
   font-weight: 300;
