@@ -31,23 +31,8 @@ get_header(); ?>
         
         
         <template id = "bascet">
-            <div>
-            <div v-show = "showRegPanel" class = "kabinet_control_panel">
-			    <div class = "kabinet_register_info">
-						<span class="company_name">
-							<strong>Компания: </strong> {{company}}
-						</span>
-						<span class="company_inn">
-							<strong>ИНН: </strong> {{inn}}
-						</span>
-						<span class="company_mail">
-							<strong>e-mail: </strong> {{email}}
-						</span>
-				</div>
-                <div class ="controllWrapper controllWrapperMsg">
-					Цены указаны без Вашей персональной скидки!
-				</div>
-			</div>
+            
+           
 
             <table v-if = "bascet.length > 0" class = "bascet_page_table">
                     <thead>
@@ -83,7 +68,7 @@ get_header(); ?>
                     </tfoot>
             </table>
             <strong class = "bascet_empty_string" v-else>Ваша корзина пуста</strong>
-            </div>
+           
         </template>
 
         <template id = "bascet-form">
