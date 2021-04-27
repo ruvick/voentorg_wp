@@ -2417,7 +2417,8 @@ body.ie .ibg img {
 
 .form-line .form-help-text {
   font-size: 12px;
-  color: #e0e1e3;
+  /* color: #e0e1e3; */
+  color: #858484;
 }
 
 .bascet_form .form-line {
@@ -2826,6 +2827,13 @@ input[type="checkbox"],
     -ms-flex-pack: end;
     justify-content: flex-end; } }
 
+@media (max-width: 612px) {
+  .bascet_form {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
 @media (max-width: 550px) {
   .select-prod-sl {
     flex-wrap: wrap;
@@ -2996,7 +3004,12 @@ input[type="checkbox"],
     top: 60%;
     left: 18%;
     width: 230px;
-    height: 45px; } }
+    height: 45px; } 
+  .bascet-form__btn {
+    width: 100%;
+  }
+  
+}
 
 @media (max-width: 390px) {
   .prod-card__price {

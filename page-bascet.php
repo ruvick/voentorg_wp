@@ -131,7 +131,7 @@ get_header(); ?>
 
         <section>   
             <div class="container">
-                <div class = "container" id = "bascet_vue">
+                <div id = "bascet_vue">
 
                     <div class = "bascet_content" >
                         <bascet></bascet>
