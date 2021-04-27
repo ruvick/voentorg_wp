@@ -106,14 +106,14 @@ get_header(); ?>
 								</div>
 							</div>
 							<button class="btn btn__to-card" onclick = "add_tocart(this, 0); return false;"
-                data-price = "<?echo carbon_get_post_meta(get_the_ID(),"offer_price"); ?>"
-								data-sku1c = "<? echo carbon_get_post_meta(get_the_ID(),"offer_sku")?>"
-								data-sku = "<? echo $chart['size_chart']; ?>"
-                data-oldprice = "<? echo carbon_get_post_meta(get_the_ID(),"offer_old_price")?>"
-                data-lnk = "<? echo  get_the_permalink(get_the_ID());?>"
-                data-name = "<? echo  get_the_title();?>"
-                data-count = "1"
-                data-picture = "<?php echo wp_get_attachment_image_src($item['gal_img'], 'large')[0];?>"  
+                				data-price = "<?echo carbon_get_post_meta(get_the_ID(),"offer_price"); ?>"
+								data-sku = "<? echo carbon_get_post_meta(get_the_ID(),"offer_sku")?>"
+								data-size = "<? echo $chart['size_chart']; ?>"
+                				data-oldprice = "<? echo carbon_get_post_meta(get_the_ID(),"offer_old_price")?>"
+                				data-lnk = "<? echo  get_the_permalink(get_the_ID());?>"
+                				data-name = "<? echo  get_the_title();?>"
+                				data-count = "1"
+                				data-picture = "<?php echo wp_get_attachment_image_src($item['gal_img'], 'large')[0];?>"  
             >Добавить в корзину
 						</button> 
 						</form>
