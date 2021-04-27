@@ -32,8 +32,6 @@ get_header(); ?>
         
         <template id = "bascet">
             
-           
-
             <table v-if = "bascet.length > 0" class = "bascet_page_table">
                     <thead>
                         <tr>   
