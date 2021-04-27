@@ -34,7 +34,7 @@
 							<a href="<?php echo get_permalink(164);?>" class="header__bascket">Корзина</a>
 							<div class="header__bascket-icon d-flex">
 								<a href="<?php echo get_permalink(164);?>" class="bascket-icon-1 d-flex"></a> 
-								<div class="bascket-icon-2 bascet_counter d-flex">0</div>
+								<a href="<?php echo get_permalink(164);?>" class="bascket-icon-2 bascet_counter d-flex">0</a>
 							</div>
 						</div>
 					</div>
