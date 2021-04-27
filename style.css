@@ -2994,6 +2994,18 @@ input[type="checkbox"],
   .box-modal button {
     width: 100%;
   }
+  .footer-menu {
+    width: 100%;
+  }
+  .footer-menu ul {
+    margin-bottom: 15px;
+  }
+  .header-top__menu li {
+    margin-left: 0;
+  }
+  .footer__policy a:after {
+    left: 5%;
+  }
 }
 
 @media (max-width: 414px) {
