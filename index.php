@@ -16,9 +16,11 @@
 									?>
 								<div class="slider__item">
 									<img src="<?php echo wp_get_attachment_image_src($item['slider_img'], 'full')[0];?>" alt="">
-									<div class="info-sl__discounts">
-										<? echo $item['slider_discount']; ?>
-									</div>
+									<? if ( !empty($item['slider_discount'])) { ?>
+										<div class="info-sl__discounts">
+											<? echo $item['slider_discount']; ?>
+										</div>
+									<? } ?>
 									<div class="info-sl__text-new">  
 										<h1><? echo $item['slider_title']; ?></h1>
 										<p>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <title>Главная</title>
+  <title><?php wp_title(); ?></title>
   <meta charset="UTF-8">
   <meta name="format-detection" content="telephone=no">
   <meta name="description" content="Новый сайт">
@@ -23,6 +23,14 @@
   <?php wp_head();?>  
 
 </head>
+
+<script>  
+    let main_page = "<?echo get_bloginfo("url"); ?>";
+    let bascet_page = "<?echo get_the_permalink(164); ?>";
+    let thencs_page = "<?echo get_the_permalink(173); ?>";
+    let nophoto_page = "<?echo get_bloginfo("template_url");?>/img/no-photo.jpg";
+</script> 
+
 <body>
   <div class="wrapper">  
     <!-- Подключение  модальных окон--> 

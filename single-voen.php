@@ -82,33 +82,42 @@ get_header(); ?>
 							<div class="availability-text"><?echo carbon_get_post_meta(get_the_ID(),"offer_nal"); ?></div>
 						</div>
 						<div class="actions-block__price"><?echo carbon_get_post_meta(get_the_ID(),"offer_price"); ?> руб.</div>
-						<div class="spacer__vendor">Артикул: <span><? echo carbon_get_post_meta(get_the_ID(),"offer_sku"); ?></span></div>
-
+						<?
+							$sku = carbon_get_post_meta(get_the_ID(),"offer_sku");	
+							if (!empty($sku)) {
+						?>
+								<div class="spacer__vendor">Артикул: <span><? echo $sku; ?></span></div>
+						<?
+							}
+						?>
 						<form class="actions-block__form form-block" action="#">
 							<div class="actions-block__form-item form-block__item">
-								<p>Размер</p>
-								<div class="actions-block__options options d-flex">
-								<?
-									$size_chart = carbon_get_the_post_meta('size_chart_complex');
-										if($size_chart) {
-									$size_chartIndex = 0;
-									foreach($size_chart as $chart) { 
+								<? 
+									$size_chart = carbon_get_the_post_meta('size_chart_complex'); 
+									if($size_chart) {
 								?>
-									<div class="option">
-										<? echo $chart['size_chart']; ?>
-									<input type="radio" value="1" name="form[type]">
+
+									<p>Размер</p>
+									<div class="actions-block__options options d-flex">
+										<?
+											foreach($size_chart as $chart) { 
+										?>
+											<div onclick = "set_size('<? echo $chart['size_chart']; ?>')" class="option">
+												<? echo $chart['size_chart']; ?>
+												<input type="radio"  value="1" name="form[type]">
+											</div>
+										<?
+											}
+										?>
 									</div>
 								<?
-									$size_chartIndex++;
-										}
 									}
 								?>
-								</div>
 							</div>
-							<button class="btn btn__to-card" onclick = "add_tocart(this, 0); return false;"
+							<button class="btn btn__to-card" id = "btn__to-card" onclick = "add_tocart(this, 0); return false;"
                 				data-price = "<?echo carbon_get_post_meta(get_the_ID(),"offer_price"); ?>"
 								data-sku = "<? echo carbon_get_post_meta(get_the_ID(),"offer_sku")?>"
-								data-size = "<? echo $chart['size_chart']; ?>"
+								data-size = ""
                 				data-oldprice = "<? echo carbon_get_post_meta(get_the_ID(),"offer_old_price")?>"
                 				data-lnk = "<? echo  get_the_permalink(get_the_ID());?>"
                 				data-name = "<? echo  get_the_title();?>"

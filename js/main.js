@@ -16,6 +16,12 @@ function number_format() {
 	}
 }
 
+function set_size(sizeName) {
+	let btn = document.getElementById('btn__to-card');
+	btn.dataset.size = sizeName; 
+	console.log(sizeName);
+}
+
 document.addEventListener("DOMContentLoaded", () => {
 	number_format();
 	cart_recalc();
@@ -67,7 +73,7 @@ function add_tocart(elem, countElem) {
 	} else {
 		let addet = true;
 		for (let i = 0; i < cart.length; i++) {
-			if (cart[i].sku == cartElem.sku) {
+			if ((cart[i].sku == cartElem.sku)&&(cart[i].size == cartElem.size)) {
 				cart[i].count++;
 				cart[i].subtotal = Number(cart[i].count) * parseFloat(cart[i].price);
 				addet = false;
