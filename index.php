@@ -22,7 +22,7 @@
 										</div>
 									<? } ?>
 									<div class="info-sl__text-new">  
-										<h1><? echo $item['slider_title']; ?></h1>
+										<h2><? echo $item['slider_title']; ?></h2>
 										<p>
 											<? echo $item['slider_subtitle']; ?>
 										</p>
@@ -163,6 +163,18 @@
 
 			</div>
 		</section>
+
+<? if ( !empty(carbon_get_theme_option('about_home'))) { ?>
+		<section id="index-title" class="index-title">
+			<div class="container">
+			<h1><?php echo carbon_get_theme_option('about_home_title'); ?></h1>
+			<div class="index-title__subtitle">
+				<?php echo carbon_get_theme_option('about_home'); ?>
+			</div>
+
+			</div>
+		</section>
+	<? } ?>
 
 	</main>
 

@@ -1002,9 +1002,13 @@ body.ie .ibg img {
   max-width: 280px;
   width: 100%; }
 
-.info-sl__text-new h1 {
+  .info-sl__text-new h2 {
+  font-size: 46.66px;
+  font-weight: 700;
+  line-height: 55.99px;
   color: #F4FBF5;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+ }
 
 .info-sl__text-new p {
   color: #000;
@@ -2009,7 +2013,7 @@ body.ie .ibg img {
   background: #EEA72A; }
 
 .newprod {
-  padding: 35px 0 80px 0; }
+  padding: 35px 0 50px 0; }
 
 .newprod h2 {
   text-align: center;
@@ -2502,7 +2506,21 @@ input[type="checkbox"],
 
 /* Оформление корзины */
 
-
+.index-title {
+  padding: 0 0 65px 0;
+}
+.index-title h1 {
+  font-size: 30px;
+  font-weight: inherit;
+  line-height: 36px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.index-title__subtitle {
+  font-weight: 300;
+  line-height: 19.2px;
+  color: #858484;
+}
 
 
 
@@ -2572,7 +2590,7 @@ input[type="checkbox"],
   .info-sl__text-new {
     top: 5%;
     left: 15%; }
-  .info-sl__text-new h1 {
+  .info-sl__text-new h2 {
     font-size: 40px;
     line-height: 35px;
     margin-bottom: 10px; }
@@ -2794,7 +2812,7 @@ input[type="checkbox"],
     width: 250px;
     height: 35px;
     padding-left: 10px; }
-  .info-sl__text-new h1 {
+  .info-sl__text-new h2 {
     font-size: 35px;
     line-height: 30px;
     margin-bottom: 13px; }
@@ -2882,7 +2900,13 @@ input[type="checkbox"],
   .products h2 {
     margin-bottom: 15px; }
   .newprod h2 {
-    margin-bottom: 15px; } }
+    margin-bottom: 15px; }
+  .index-title {
+    padding: 0 0 40px 0;}
+  .index-title__subtitle {
+      text-align: justify;
+  }
+ }
 
 @media (max-width: 530px) {
   .header__logo:before {
@@ -2928,7 +2952,7 @@ input[type="checkbox"],
     left: 10%; }
   .info-sl__text-new {
     max-width: 380px; }
-  .info-sl__text-new h1 {
+  .info-sl__text-new h2 {
     font-size: 33px;
     line-height: 23px; }
   .info-sl__discounts {
